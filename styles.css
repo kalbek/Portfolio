@@ -45,13 +45,6 @@ section.headline {
   padding: 1rem 3rem 4rem 0;
 }
 
-.tags {
-  gap: 0.4rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .tag {
   align-items: center;
   padding: 5px 10px;
@@ -62,7 +55,7 @@ section.headline {
 }
 
 .tag a {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -94,7 +87,7 @@ section.headline {
 }
 
 .primary-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -138,6 +131,7 @@ header {
   display: flex;
   gap: 20px;
   justify-content: flex-start;
+
   /* width: 0 auto; */
   margin-top: 2rem;
   margin-bottom: 4rem;
@@ -205,9 +199,9 @@ header {
   position: absolute;
   width: 100%;
   height: 222px;
+
   /* left: calc(50% - 327px / 2); */
-  bottom: 0px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
 }
 
@@ -218,7 +212,7 @@ header {
 .card-1-subcard-header p {
   width: 295px;
   height: 57px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -233,10 +227,6 @@ header {
   width: 327px;
   height: 352px;
   position: relative;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -246,7 +236,7 @@ header {
   margin-top: 1.3rem;
   width: 337px;
   height: 32px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -274,11 +264,15 @@ header {
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .tags ul li a {
   list-style: none;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -298,18 +292,16 @@ header {
 .tag-2-container {
   height: 40px;
   border-radius: 8px;
-  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  background: #ffffff;
-  border-radius: 8px;
+  background: #fff;
   text-align: center;
   display: inline-block;
 }
 
 .tag-2-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -319,7 +311,7 @@ header {
 }
 
 .recent-works .header {
-  margin-top: -12rem;
+  margin-top: -9rem;
   margin-bottom: 1rem;
 }
 
@@ -327,7 +319,7 @@ header {
 .primary-text p {
   width: 327px;
   height: 97px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -340,12 +332,13 @@ header {
 /* STYLING SHAPES */
 .shape-8 {
   position: absolute;
-  margin-left: 63%;
+  margin-left: 15rem;
 }
 
 .shape-9 {
   position: absolute;
   margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 .flex {
