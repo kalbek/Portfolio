@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 375px;
+  margin: 0 auto;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+/* STYLING TOOLBAR */
+.toolbar {
+  width: 375px;
+  height: 48px;
+  top: 44px;
+  margin-top: 1rem;
+  padding: 0 2rem 0 1rem;
+}
+.toolbar h3 {
+  color: #28352f;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* STYLING HEADER */
+header {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+/* STYLING SHAPES */
+.bar-shapes {
+  position: absolute;
+  margin-top: -2rem;
+}
+.shape-1 {
+  height: fit-content;
+  margin-top: 20%;
+  margin-left: 1.1rem;
+}
+.shape-2 {
+  margin-top: -2rem;
+  margin-left: -2.5rem;
+}
+.shape-3 {
+  height: fit-content;
+  margin-right: -2rem;
+}
+.shape-7 {
+  height: fit-content;
+  width: fit-content;
+  margin-left: 38%;
+  margin-top: -22%;
+  margin-bottom: 20%;
+}
+.shape-4 {
+  margin-left: 80%;
+  margin-top: -7%;
+}
+
+.shape-6 {
+  position: absolute;
+  margin-top: 13.5rem;
+  margin-left: -1rem;
+}
+.shape-8 {
+  position: absolute;
+  margin-left: 63%;
+}
+.shape-9 {
+  position: absolute;
+  margin-top: 2rem;
+}
+.shape-10 {
+  position: absolute;
+  margin-left: 60%;
+}
+
+/* STYLING THE INTRO TEXT and SUPPORTING TEXT */
+.primary-intro {
+  width: 327px;
+  height: 192px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin-top: 1.5rem;
+}
+.primary-intro span {
+  color: #36b37e;
+}
+
+.supporting-text {
+  position: relative;
+  width: 327px;
+  height: 164px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  margin-top: 4rem;
+}
+
+.indicatior-icon {
+  margin-top: -4rem;
+  margin-bottom: 4.5rem;
+}
+
+.social-media-icons {
+  margin-top: 17%;
+  width: 170.17px;
+  height: 20px;
+  gap: 1rem;
+}
+
+/* UTILITIES */
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-centered {
+  justify-content: center;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
