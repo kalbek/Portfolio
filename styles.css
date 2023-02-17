@@ -138,6 +138,7 @@ header nav {
   margin-top: -4rem;
   margin-bottom: 4.5rem;
 }
+
 .social-icon-container {
   position: relative;
 }
@@ -155,6 +156,7 @@ header nav {
 .scroll-icon {
   margin-top: 8rem;
 }
+
 /* UTILITIES */
 .flex {
   display: flex;
