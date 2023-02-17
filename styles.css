@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 375px;
+  margin: auto;
+}
+
+.social-media-icons li {
+  display: flex;
+  justify-content: center;
+  float: left;
+  margin: 0 1.1rem;
+  width: 1.5vw;
+}
+
+section.headline {
+  padding-top: 20%;
+  margin-top: -3rem;
+  height: 100vh;
+  background-image: url("./Assets/Images/background.svg");
+  background-repeat: no-repeat;
+}
+
+/* STYLING TOOLBAR */
+.toolbar {
+  width: 375px;
+  height: 48px;
+  top: 44px;
+  padding: 1rem 3rem 4rem 0;
+}
+
+.toolbar a {
+  color: #28352f;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* STYLING HEADER */
+header {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+/* STYLING THE INTRO TEXT and SUPPORTING TEXT */
+.primary-intro h1 {
+  width: 327px;
+  height: 192px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  position: relative;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin-top: 0.1rem;
+  margin-left: 1rem;
+}
+
+.primary-intro span {
+  color: #36b37e;
+}
+
+.supporting-text {
+  position: relative;
+  width: 327px;
+  height: 164px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  margin-top: -1.1rem;
+}
+
+.indicatior-icon {
+  margin-top: -4rem;
+  margin-bottom: 4.5rem;
+}
+
+.social-icon-container {
+  position: relative;
+}
+
+.social-media-icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 5.5rem;
+  margin-left: -2.4rem;
+}
+
+.scroll-icon {
+  margin-top: 11rem;
+}
+
+/* UTILITIES */
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-centered {
+  justify-content: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* media queries */
+@media (min-width: 375px) and (max-width: 768px) {
+  /* * {
+    box-sizing: border-box;
+  } */
+}
