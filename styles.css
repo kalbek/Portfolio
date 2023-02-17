@@ -2,14 +2,35 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   max-width: 375px;
   margin: auto;
 }
 
-main {
+.social-media-icons li {
   display: flex;
   justify-content: center;
+  float: left;
+  margin: 0 1rem;
+  width: 1.5vw;
+}
+
+section.headline {
+  padding-top: 20%;
+  margin-top: -3rem;
+  height: 100vh;
+  background-image: url("./Assets/Images/background.svg");
+  background-repeat: no-repeat;
 }
 
 /* STYLING TOOLBAR */
@@ -17,11 +38,12 @@ main {
   width: 375px;
   height: 48px;
   top: 44px;
-  padding: 0 2rem 4rem 1rem;
+  padding: 1rem 3rem 4rem 0;
 }
 
-.toolbar h3 {
+.toolbar a {
   color: #28352f;
+  text-decoration: none;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -30,74 +52,6 @@ main {
 /* STYLING HEADER */
 header {
   padding: 1rem 1rem 2rem 1rem;
-}
-
-header nav {
-  margin-top: 1.3rem;
-}
-
-.intro {
-  margin-top: -5.5rem;
-  position: absolute;
-}
-
-/* STYLING SHAPES */
-.bar-shapes {
-  position: absolute;
-  margin-top: -2rem;
-}
-
-.shape-1 {
-  position: relative;
-}
-
-.shape-1 img {
-  margin-top: 6rem;
-  margin-left: 0.7rem;
-}
-
-.shape-2 {
-  margin-top: -4.5rem;
-  margin-left: -2.9rem;
-}
-
-.shape-3 {
-  height: fit-content;
-  margin-top: -6rem;
-  margin-right: -2rem;
-}
-
-.shape-7 {
-  height: fit-content;
-  width: fit-content;
-  margin-left: 38%;
-  margin-top: 1.3rem;
-}
-
-.shape-4 {
-  margin-left: 80%;
-  margin-top: -2rem;
-}
-
-.shape-6 {
-  position: absolute;
-  margin-top: 9.5rem;
-  margin-left: -1rem;
-}
-
-.shape-8 {
-  position: absolute;
-  margin-left: 63%;
-}
-
-.shape-9 {
-  position: absolute;
-  margin-top: 2rem;
-}
-
-.shape-10 {
-  position: absolute;
-  margin-left: 60%;
 }
 
 /* STYLING THE INTRO TEXT and SUPPORTING TEXT */
@@ -146,15 +100,12 @@ header nav {
 .social-media-icons {
   position: absolute;
   display: flex;
-  justify-content: baseline;
-  margin-top: 5rem;
-  width: 170.17px;
-  height: 20px;
-  gap: 1rem;
+  justify-content: center;
+  margin-top: 5.5rem;
 }
 
 .scroll-icon {
-  margin-top: 8rem;
+  margin-top: 11rem;
 }
 
 /* UTILITIES */
@@ -180,4 +131,11 @@ header nav {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+/* media queries */
+@media (min-width: 375px) and (max-width: 768px) {
+  /* * {
+    box-sizing: border-box;
+  } */
 }
