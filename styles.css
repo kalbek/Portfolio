@@ -136,6 +136,7 @@ header {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
+
 .get-resume .resume {
   width: 180px;
 }
@@ -262,7 +263,6 @@ header {
 
 .tags {
   display: flex;
-  justify-content: flex-start;
   margin: 0 auto;
   gap: 0.4rem;
   flex-wrap: wrap;
