@@ -6,12 +6,14 @@
 
 body {
   max-width: 375px;
-  margin: 0 auto;
+  margin: auto;
 }
+
 main {
   display: flex;
   justify-content: center;
 }
+
 /* STYLING TOOLBAR */
 .toolbar {
   width: 375px;
@@ -20,6 +22,7 @@ main {
   margin-top: 1rem;
   padding: 0 2rem 0 1rem;
 }
+
 .toolbar h3 {
   color: #28352f;
   font-family: "Inter", sans-serif;
@@ -37,19 +40,23 @@ header {
   position: absolute;
   margin-top: -2rem;
 }
+
 .shape-1 {
   height: fit-content;
   margin-top: 20%;
   margin-left: 1.1rem;
 }
+
 .shape-2 {
   margin-top: -2rem;
   margin-left: -2.5rem;
 }
+
 .shape-3 {
   height: fit-content;
   margin-right: -2rem;
 }
+
 .shape-7 {
   height: fit-content;
   width: fit-content;
@@ -57,6 +64,7 @@ header {
   margin-top: -22%;
   margin-bottom: 20%;
 }
+
 .shape-4 {
   margin-left: 80%;
   margin-top: -7%;
@@ -67,14 +75,17 @@ header {
   margin-top: 13.5rem;
   margin-left: -1rem;
 }
+
 .shape-8 {
   position: absolute;
   margin-left: 63%;
 }
+
 .shape-9 {
   position: absolute;
   margin-top: 2rem;
 }
+
 .shape-10 {
   position: absolute;
   margin-left: 60%;
@@ -84,7 +95,7 @@ header {
 .primary-intro {
   width: 327px;
   height: 192px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -93,6 +104,7 @@ header {
   color: #172b4d;
   margin-top: 1.5rem;
 }
+
 .primary-intro span {
   color: #36b37e;
 }
@@ -101,7 +113,7 @@ header {
   position: relative;
   width: 327px;
   height: 164px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -127,19 +139,23 @@ header {
 .flex {
   display: flex;
 }
+
 .space-between {
   justify-content: space-between;
 }
+
 .flex-centered {
   justify-content: center;
 }
+
 .absolute {
   position: absolute;
 }
+
 .relative {
   position: relative;
 }
+
 .wrap {
   flex-wrap: wrap;
 }
-
