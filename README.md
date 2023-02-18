@@ -123,7 +123,7 @@ I would like to thank the Microverse full-stack curriculum for the inspiration a
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 - **Is it allowed to copy the contents of this project and use it for personal use?**
 
