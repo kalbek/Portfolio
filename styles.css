@@ -86,7 +86,7 @@ section.headline {
   letter-spacing: 3%;
   text-align: center;
   margin: 0 auto;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn-primary a {
@@ -96,7 +96,7 @@ section.headline {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -237,7 +237,7 @@ header {
   width: 325px;
   height: 222px;
   left: calc(50% - 327px / 2);
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   margin-top: 39.5%;
   margin-left: 0.9px;
@@ -294,7 +294,7 @@ header {
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
   text-align: center;
   display: inline-block;
 }
