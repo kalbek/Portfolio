@@ -225,6 +225,7 @@ header {
   border: 1px solid #c1c7d0;
   border-radius: 8px;
   margin-bottom: 24px;
+  margin-left: .3rem;
 }
 
 .card-1-subcard {
@@ -268,6 +269,7 @@ header {
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
+  margin-left: -2rem;
 }
 
 .card-2-title {
@@ -398,7 +400,7 @@ header {
 /* STYLING SHAPES */
 .shape-8 {
   position: absolute;
-  margin-left: 22%;
+  margin-left: -3rem;
   content: url("./Assets/Shapes/Shape\ 8.svg");
 }
 
