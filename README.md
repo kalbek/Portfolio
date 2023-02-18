@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install this project using the cloned repo or download and use files to your local machine.
+Install this project using the cloned repo or download and use the files to your local machine.
 
 ### Usage
 
@@ -88,7 +88,7 @@ You can deploy this project using GitHub Pages
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Kaleb Bekele**
 
 - GitHub: [@githubhandle](https://github.com/kalbek)
 - Twitter: [@twitterhandle](https://twitter.com/KNuramo)
