@@ -21,8 +21,7 @@ body {
   display: flex;
   justify-content: center;
   float: left;
-  margin: 0 1.1rem;
-  width: 1.5vw;
+  margin: 0 0.6rem;
 }
 
 .card-1 li {
@@ -200,6 +199,7 @@ header {
   position: absolute;
   width: 100%;
   height: 222px;
+  margin-top: 67%;
 
   /* left: calc(50% - 327px / 2); */
   background: #fff;
