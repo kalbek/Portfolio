@@ -324,11 +324,9 @@ header {
 }
 
 .tags {
-  display: flex;
+  float: left;
   margin: 0 auto;
   gap: 0.4rem;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 }
 
