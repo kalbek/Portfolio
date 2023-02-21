@@ -325,6 +325,7 @@ header {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+ 
 }
 
 .tag-2-outer-container {
@@ -473,6 +474,60 @@ header {
 
 .contact {
   margin-top: 8rem;
+  position: relative;
+}
+
+.resume-btn {
+  width: 129px;
+  height: 48px;  
+  background: #36B37F;
+  border-radius: 4px;
+  color: #fff;
+  border-style: none;
+  margin: 2rem 4rem 0 4rem;
+  font-size: 17px;
+}
+
+input[type=text] {
+  height: 48px;
+  width: 327px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+input[type=email] {
+  height: 48px;
+  width: 327px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+textarea[name=message] {
+  height: 114px;
+  width: 327px;
+  border-radius: 4px;
+}
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  gap: 1rem;
+}
+
+.email-contact {
+  height: 189px;
+  width: 375px;
+  margin-top: 4rem;
+}
+
+.email-contact > p {
+  font-family: "Inter" , sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  color: #42526E;
 }
 
 /* media queries */
