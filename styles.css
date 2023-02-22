@@ -147,12 +147,16 @@ header {
 }
 
 /* STYLING THE INTRO TEXT and SUPPORTING TEXT */
+.primary-intro {
+  position: relative;
+}
+
 .primary-intro h1 {
   width: 327px;
   height: 192px;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  position: relative;
+  position: absolute;
   font-weight: 700;
   font-size: 38px;
   line-height: 52px;
@@ -160,6 +164,10 @@ header {
   color: #172b4d;
   margin-top: 0.1rem;
   margin-left: 1rem;
+}
+
+.social-media-icons {
+  position: absolute;
 }
 
 .get-resume {

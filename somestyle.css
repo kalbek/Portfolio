@@ -1,0 +1,502 @@
+* {
+  box-sizing: border-box;
+}
+
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 375px;
+  margin: auto;
+  display: flex;
+}
+
+.toolbar {
+  position: absolute;
+  width: 375px;
+  height: 48px;
+  padding: 10px 25px 10px 25px;
+}
+
+.toolbar a {
+  color: #28352f;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.headline {
+  margin-top: 0.01rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 24px;
+  /* width: auto; */
+  height: 726px;
+  margin-top: 10%;
+  background-image: url("./Assets/Images/background.svg");
+  background-repeat: no-repeat;
+}
+
+.primary {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.1rem;
+  position: relative;
+}
+
+.primary h1,
+.primary h2,
+.recent-works h2,
+.about-me h2 {
+  position: relative;
+  width: 327px;
+  height: 192px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.primary span {
+  color: #36b37e;
+}
+
+.supporting-text {
+  height: 164px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 4rem;
+}
+
+.about-me .supporting-text {
+  padding: 0 15px;
+  margin-top: -24px;
+}
+
+.primary .social-media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.primary .social-media-icons ul li {
+  margin-left: 1rem;
+  float: right;
+}
+
+.primary .social-media-icons ul {
+  margin-left: -4rem;
+}
+
+.action {
+  width: 327px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  top: 10%;
+  position: absolute;
+  top: 108%;
+}
+
+.action .icon {
+  content: url("./Assets/Buttons/Scroll\ down\ icon.svg");
+}
+
+.recent-works .text .primary-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -3.5rem;
+}
+
+.recent-works .text .indicator {
+  display: flex;
+  justify-content: center;
+}
+
+.recent-works .text .indicator .icon {
+  width: 48px;
+  height: 4px;
+  content: url("./Assets/Buttons/Indicator.svg");
+  position: absolute;
+  margin-top: -3rem;
+}
+
+.card-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-work ul {
+  margin-left: -38px;
+}
+
+.card-work .card {
+  display: absolute;
+  display: flex;
+  justify-content: center;
+  width: 327px;
+  height: 478px;
+  position: relative;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.card-work .card .subcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  position: absolute;
+  width: 325px;
+  height: 222px;
+  left: calc(50% - 327px / 2);
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 78%;
+  margin-left: 0.9px;
+}
+
+.card-work .card .subcard .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: -1.5rem;
+}
+
+.project-title h3 {
+  width: 295px;
+  height: 57px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.tags ul {
+  display: flex;
+  justify-content: start;
+}
+
+.card-1 .tags ul li:not(:last-child) {
+  margin-right: 7px;
+}
+
+.tags a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  list-style-type: none;
+}
+
+.tags ul li {
+  float: right;
+  align-items: center;
+  padding: 5px 10px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style-type: none;
+  margin-top: -1rem;
+}
+
+.btn-primary {
+  background-color: #36b37f;
+  height: 48px;
+  border-radius: 4px;
+  padding: 12px;
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.btn-primary a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #36b37f;
+  box-shadow: 0.0001px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.btn-primary:active {
+  background: #008552;
+}
+
+.card-1 .btn-primary {
+  margin-top: 7%;
+}
+
+.about-me {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shape-8 {
+  position: absolute;
+  margin-left: -3rem;
+  margin-top: -1rem;
+  content: url("./Assets/Shapes/Shape\ 8.svg");
+}
+
+.about-me .supporting-text {
+  position: absolute;
+  top: 6%;
+}
+
+.get-resume {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  position: absolute;
+  top: 17%;
+  bottom: 5%;
+}
+
+.about-me .btn-primary {
+  width: 155px;
+}
+
+.shape-9 {
+  position: absolute;
+  top: 16.5%;
+  right: 80%;
+  bottom: 5%;
+  content: url("./Assets/Shapes/Shape\ 9.svg");
+}
+
+/* card 2 */
+.about-me .card-2 {
+  width: 327px;
+  height: 352px;
+  position: relative;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  margin-left: -2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-cards {
+  margin-top: 150px;
+  margin-left: -0.3rem;
+}
+
+.card-2 .title {
+  margin-top: 1.3rem;
+  width: 337px;
+  height: 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.card-2 img {
+  margin-top: 2rem;
+}
+
+.card-2 .tags {
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-2 .tags ul li {
+  margin-top: 0.1px;
+}
+
+.card-2 .tags li {
+  height: 40px;
+  border-radius: 8px;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  text-align: center;
+  display: inline-block;
+}
+
+.card-2 .tags a {
+  width: 65px;
+  height: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
+
+.card-2 .tags ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: -2.5rem;
+  flex-wrap: wrap;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: url("./Assets/Shapes/languages-icon.svg");
+}
+
+.frameworks {
+  content: url("./Assets/Shapes/frameworks-icon.svg");
+}
+
+.skills {
+  content: url("./Assets/Shapes/skills-icon.svg");
+}
+
+form input {
+  width: 327px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+#primary-rich-textbox {
+  width: 327px;
+  height: 114px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: #ffffff;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  text-align: start;
+  /* overflow: auto; */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.contact .container {
+  position: absolute;
+  left: 6%;
+  top: 12rem;
+}
+
+.contact form input,
+.contact form textarea {
+  margin-bottom: 1rem;
+}
+
+.shape-10 {
+  position: absolute;
+  top: 38.5%;
+  left: 90%;
+  content: url("./Assets/Shapes/Shape\ 10.svg");
+}
+
+.social-media-icons ul {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 10%;
+}
+
+.social-media-icons {
+    margin-left: -3rem;
+}
+
+.social-media-icons ul li:not(:first-child) {
+    margin-left: 15px;
+}
+
+/* UTILITIES */
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-centered {
+  justify-content: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.grid-center {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+/* END OF UTILITIES */
