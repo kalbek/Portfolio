@@ -38,7 +38,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 5px 24px;
-  /* width: auto; */
   height: 726px;
   margin-top: 10%;
   background-image: url("./Assets/Images/background.svg");
@@ -319,7 +318,6 @@ form button:hover {
   content: url("./Assets/Shapes/Shape\ 9.svg");
 }
 
-/* card 2 */
 .about-me .card-2 {
   width: 327px;
   height: 352px;
@@ -440,7 +438,6 @@ form input {
   border: 1px solid #60c095;
   border-radius: 4px;
   text-align: start;
-  /* overflow: auto; */
 }
 
 .contact {
@@ -483,7 +480,6 @@ form input {
     margin-left: 15px;
 }
 
-/* UTILITIES */
 .flex {
   display: flex;
 }
@@ -513,4 +509,3 @@ form input {
   align-items: center;
   justify-content: center;
 }
-/* END OF UTILITIES */
