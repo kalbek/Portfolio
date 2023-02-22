@@ -34,7 +34,6 @@ body {
 }
 
 .headline {
-  margin-top: 0.01rem;
   flex-direction: column;
   align-items: center;
   padding: 5px 24px;
@@ -86,6 +85,19 @@ body {
 .about-me .supporting-text {
   padding: 0 15px;
   margin-top: -24px;
+  position: absolute;
+  top: 6%;
+}
+
+.social-media-icons ul {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 10%;
+}
+
+.social-media-icons ul li:not(:first-child) {
+  margin-left: 15px;
 }
 
 .primary .social-media-icons {
@@ -103,12 +115,34 @@ body {
   margin-left: -4rem;
 }
 
+.contact .container {
+  position: absolute;
+  left: 5%;
+  top: 12rem;
+}
+
+.tags ul {
+  display: flex;
+  justify-content: start;
+}
+
+.card-2 .tags ul li {
+  margin-top: 0.1px;
+}
+
+.card-1 .tags ul li:not(:last-child) {
+  margin-right: 7px;
+}
+
+.card-work ul {
+  margin-left: -38px;
+}
+
 .action {
   width: 327px;
   height: 48px;
   display: flex;
   justify-content: center;
-  top: 10%;
   position: absolute;
   top: 108%;
 }
@@ -140,10 +174,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.card-work ul {
-  margin-left: -38px;
 }
 
 .card-work .card {
@@ -196,15 +226,6 @@ body {
   color: #3a4a42;
 }
 
-.tags ul {
-  display: flex;
-  justify-content: start;
-}
-
-.card-1 .tags ul li:not(:last-child) {
-  margin-right: 7px;
-}
-
 .tags a {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -226,7 +247,7 @@ body {
   margin-top: -1rem;
 }
 
-.btn-primary, form button {
+.btn-primary {
   background-color: #36b37f;
   height: 48px;
   border-radius: 4px;
@@ -238,7 +259,30 @@ body {
   border: 0px solid #36b37f;
 }
 
-.btn-primary p, form button {
+form button {
+  background-color: #36b37f;
+  height: 48px;
+  border-radius: 4px;
+  padding: 12px;
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid #36b37f;
+}
+
+.btn-primary p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+form button {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 17px;
@@ -290,11 +334,6 @@ form button:hover {
   margin-left: -3rem;
   margin-top: -1rem;
   content: url("./Assets/Shapes/Shape\ 8.svg");
-}
-
-.about-me .supporting-text {
-  position: absolute;
-  top: 6%;
 }
 
 .get-resume {
@@ -362,10 +401,6 @@ form button:hover {
   flex-wrap: wrap;
 }
 
-.card-2 .tags ul li {
-  margin-top: 0.1px;
-}
-
 .card-2 .tags li {
   height: 40px;
   border-radius: 8px;
@@ -422,7 +457,7 @@ form {
 form input {
   width: 327px;
   height: 48px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
 }
@@ -430,11 +465,7 @@ form input {
 #primary-rich-textbox {
   width: 327px;
   height: 114px;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #60c095;
   border-radius: 4px;
   text-align: start;
@@ -445,12 +476,6 @@ form input {
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-
-.contact .container {
-  position: absolute;
-  left: 5%;
-  top: 12rem;
 }
 
 .contact form input,
@@ -465,19 +490,8 @@ form input {
   content: url("./Assets/Shapes/Shape\ 10.svg");
 }
 
-.social-media-icons ul {
-  display: flex;
-  justify-content: center;
-  gap: 2px;
-  margin-top: 10%;
-}
-
 .social-media-icons {
-    margin-left: -3rem;
-}
-
-.social-media-icons ul li:not(:first-child) {
-    margin-left: 15px;
+  margin-left: -3rem;
 }
 
 .flex {
