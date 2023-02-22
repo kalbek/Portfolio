@@ -275,6 +275,14 @@ body {
 }
 
 form button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
   background-color: #36b37f;
   height: 48px;
   border-radius: 4px;
@@ -287,17 +295,6 @@ form button {
 }
 
 .btn-primary p {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 3%;
-  text-align: center;
-  margin: 0 auto;
-  color: #fff;
-}
-
-form button {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 17px;
