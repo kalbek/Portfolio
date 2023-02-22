@@ -99,6 +99,17 @@ body {
   top: 6%;
 }
 
+.card-2 .tags li {
+  height: 40px;
+  border-radius: 8px;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  text-align: center;
+  display: inline-block;
+}
+
 .social-media-icons ul {
   display: flex;
   justify-content: center;
@@ -112,6 +123,10 @@ body {
 
 .social-media-icons {
   margin-left: -3rem;
+}
+
+.card-work ul {
+  margin-left: -38px;
 }
 
 .primary .social-media-icons {
@@ -146,21 +161,6 @@ body {
 
 .card-1 .tags ul li:not(:last-child) {
   margin-right: 7px;
-}
-
-.card-2 .tags li {
-  height: 40px;
-  border-radius: 8px;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  background: #fff;
-  text-align: center;
-  display: inline-block;
-}
-
-.card-work ul {
-  margin-left: -38px;
 }
 
 .action {
