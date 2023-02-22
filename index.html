@@ -340,9 +340,14 @@
               name="name"
               maxlength="30"
               placeholder="  Full name"
-              *required=""
+              required
             />
-            <input type="email" name="email" placeholder="  Email address" *required="" />
+            <input
+              type="email"
+              name="email"
+              placeholder="  Email address"
+              required
+            />
             <textarea
               id="primary-rich-textbox"
               class="primary-rich-textbox"
@@ -350,12 +355,9 @@
               rows="10"
               cols="43"
               maxlength="500"
-              placeholder=""
-              *required=""
-            >
- Enter text here
-          </textarea
-            >
+              placeholder=" Enter text here"
+              required
+            ></textarea>
             <button type="submit">Get in touch</button>
           </form>
           <div class="shape-10"></div>

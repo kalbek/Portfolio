@@ -323,10 +323,16 @@ form button {
 }
 
 form button:hover {
+  background: #36b37f;
+  box-shadow: 0.0001px 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
 }
 
 .btn-primary:active {
+  background: #008552;
+}
+
+form button:active {
   background: #008552;
 }
 
