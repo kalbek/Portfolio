@@ -82,6 +82,16 @@ body {
   margin-bottom: 4rem;
 }
 
+.tags ul li {
+  float: right;
+  align-items: center;
+  padding: 5px 10px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style-type: none;
+  margin-top: -1rem;
+}
+
 .about-me .supporting-text {
   padding: 0 15px;
   margin-top: -24px;
@@ -100,10 +110,19 @@ body {
   margin-left: 15px;
 }
 
+.social-media-icons {
+  margin-left: -3rem;
+}
+
 .primary .social-media-icons {
   display: flex;
   justify-content: center;
   margin-left: 1rem;
+}
+
+.tags ul {
+  display: flex;
+  justify-content: start;
 }
 
 .primary .social-media-icons ul li {
@@ -121,17 +140,23 @@ body {
   top: 12rem;
 }
 
-.tags ul {
-  display: flex;
-  justify-content: start;
-}
-
 .card-2 .tags ul li {
   margin-top: 0.1px;
 }
 
 .card-1 .tags ul li:not(:last-child) {
   margin-right: 7px;
+}
+
+.card-2 .tags li {
+  height: 40px;
+  border-radius: 8px;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  text-align: center;
+  display: inline-block;
 }
 
 .card-work ul {
@@ -237,16 +262,6 @@ body {
   list-style-type: none;
 }
 
-.tags ul li {
-  float: right;
-  align-items: center;
-  padding: 5px 10px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  list-style-type: none;
-  margin-top: -1rem;
-}
-
 .btn-primary {
   background-color: #36b37f;
   height: 48px;
@@ -256,7 +271,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0px solid #36b37f;
+  border: 1px solid #36b37f;
 }
 
 form button {
@@ -268,7 +283,7 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0px solid #36b37f;
+  border: 1px solid #36b37f;
 }
 
 .btn-primary p {
@@ -401,17 +416,6 @@ form button:hover {
   flex-wrap: wrap;
 }
 
-.card-2 .tags li {
-  height: 40px;
-  border-radius: 8px;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  background: #fff;
-  text-align: center;
-  display: inline-block;
-}
-
 .card-2 .tags a {
   width: 65px;
   height: 16px;
@@ -488,10 +492,6 @@ form input {
   top: 38.5%;
   left: 90%;
   content: url("./Assets/Shapes/Shape\ 10.svg");
-}
-
-.social-media-icons {
-  margin-left: -3rem;
 }
 
 .flex {
