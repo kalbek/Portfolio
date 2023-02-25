@@ -655,27 +655,31 @@ form input {
     margin-bottom: 3rem;
   }
 
+  .shape-11 {
+    animation-name: out;
+    animation-duration: 1s;
+    position: absolute;
+    content: url("./Assets/Shapes/img-11-desktop.svg");
+    margin-top: 10rem;
+  }
+
   .shape-11:hover {
     animation-name: in;
     animation-duration: 2s;
   }
 
-  .shape-11 {
-    animation-name: out;
-    animation-duration: 1s;
-  }
-
   @keyframes in {
-    to{
+    to {
       transform: rotate(180deg);
     }
   }
+
   @keyframes out {
-    to{
+    to {
       transform: rotate(0deg);
     }
-    
   }
+
   .social-media-icons-desktop li {
     float: left;
   }
@@ -869,12 +873,6 @@ form input {
 
   .email-address {
     display: none;
-  }
-
-  .shape-11 {
-    position: absolute;
-    content: url("./Assets/Shapes/img-11-desktop.svg");
-    margin-top: 10rem;
   }
 
   .shape-12 {
