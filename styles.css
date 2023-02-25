@@ -422,6 +422,18 @@ form button:active {
   flex-wrap: wrap;
 }
 
+.desktop-navbar a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #344563;
+}
+
 .card-2 .tags a {
   width: 65px;
   height: 16px;
@@ -543,23 +555,7 @@ form input {
   display: none;
 }
 
-.desktop-navbar a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #344563;
-}
-
 .social-media-icons-desktop {
-  display: none;
-}
-
-.shape-9-desktop {
   display: none;
 }
 
@@ -584,6 +580,7 @@ form input {
   }
 
   .desktop-navbar {
+    display: block;
     padding: 1rem 0;
   }
 
@@ -647,11 +644,6 @@ form input {
     display: none;
   }
 
-  .desktop-navbar {
-    display: block;
-    max-width: 100vw;
-  }
-
   .primary .action {
     margin-top: -1rem;
     margin-left: 3rem;
@@ -713,6 +705,13 @@ form input {
     margin-bottom: -10rem;
   }
 
+  .about-me-cards ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+  }
+
   .card-work ul:not(:first-child) {
     margin-left: 10px;
   }
@@ -734,7 +733,6 @@ form input {
     left: calc(50% - 327px / 2);
     background: #fff;
     border-radius: 8px;
-    margin-left: 0.9px;
     margin-top: 68%;
     margin-left: -1.25rem;
   }
@@ -753,6 +751,7 @@ form input {
   .about-me {
     margin-top: 8%;
   }
+
   .about-me .supporting-text p {
     padding: 0 6%;
   }
@@ -777,11 +776,6 @@ form input {
     content: url("./Assets/Shapes/img-9-desktop.svg");
   }
 
-  .shape-10,
-  .about-me .contact {
-    display: none;
-  }
-
   .about-me .primary-text h2 {
     font-weight: 700;
     font-size: 30px;
@@ -803,16 +797,14 @@ form input {
     margin-top: -11.4%;
   }
 
+  .shape-10,
+  .about-me .contact {
+    display: none;
+  }
+
   .about-me-cards {
     margin-top: 3%;
     margin-bottom: 5%;
-  }
-
-  .about-me-cards ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3.5rem;
   }
 
   .get-resume {
@@ -862,10 +854,6 @@ form input {
     margin-left: -2.5rem;
     margin-top: 11rem;
     margin-bottom: 3rem;
-  }
-
-  text-area::placeholder {
-    content: ("heejlek");
   }
 
   .bar {
