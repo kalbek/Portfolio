@@ -655,6 +655,27 @@ form input {
     margin-bottom: 3rem;
   }
 
+  .shape-11:hover {
+    animation-name: in;
+    animation-duration: 2s;
+  }
+
+  .shape-11 {
+    animation-name: out;
+    animation-duration: 1s;
+  }
+
+  @keyframes in {
+    to{
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes out {
+    to{
+      transform: rotate(0deg);
+    }
+    
+  }
   .social-media-icons-desktop li {
     float: left;
   }
