@@ -670,7 +670,7 @@ form input {
 
   @keyframes in {
     to {
-      transform: rotate(180deg);
+      transform: rotate(-12deg);
     }
   }
 
@@ -876,10 +876,83 @@ form input {
   }
 
   .shape-12 {
+    animation: in_shape-12 21;
     position: absolute;
     margin-top: 20rem;
     margin-left: 22rem;
     content: url("./Assets/Shapes/img-12-desktop.svg");
+  }
+
+  /* animations */
+  .desktop-navbar li {
+    animation: nav-hover 1s ease-in;
+  }
+
+  .desktop-navbar li:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+
+  .desktop-navbar li:hover a {
+    color: #36b37e;
+  }
+
+  .primary h1 {
+    animation: heading-load 1s ease-out;
+  }
+
+  @keyframes heading-load {
+    0% {
+      transform: translateY(-40%);
+    }
+
+    90% {
+      transform: translateY(1.2);
+    }
+
+    100% {
+      transform: translateY(1);
+    }
+  }
+
+  .supporting-text p {
+    animation: header-text 1s ease-out;
+  }
+
+  @keyframes header-text {
+    0% {
+      transform: translateY(40%);
+    }
+
+    90% {
+      transform: translateY(1.2);
+    }
+
+    100% {
+      transform: translateY(1);
+    }
+  }
+
+  .shape-12:hover {
+    animation: out_shape-12 1s;
+  }
+
+  @keyframes in_shape-12 {
+    from {
+      transform: scale(1);
+      transition: 0.3s;
+    }
+    to {
+      transform: scale(1.5);
+      transition: 0.3s;
+    }
+  }
+
+  @keyframes out_shape-12 {
+    to {
+      transform: scale(1);
+      transition: 0.3s;
+    }
   }
 
   .shape-13 {
