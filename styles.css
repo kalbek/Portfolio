@@ -938,6 +938,7 @@ form input {
       transform: scale(1);
       transition: 0.3s;
     }
+
     to {
       transform: scale(1.5);
       transition: 0.3s;
