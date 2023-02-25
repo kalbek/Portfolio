@@ -64,6 +64,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  animation: heading-load 1s ease-out;
 }
 
 .recent-works h2 {
@@ -628,6 +629,10 @@ form input {
     color: #172b4d;
   }
 
+  .supporting-text p {
+    animation: header-text 1s ease-out;
+  }
+
   .primary .supporting-text p {
     position: relative;
   }
@@ -682,6 +687,10 @@ form input {
 
   .social-media-icons-desktop li {
     float: left;
+  }
+
+  .desktop-navbar li {
+    animation: nav-hover 1s ease-in;
   }
 
   .social-media-icons-desktop li:not(:first-child) {
@@ -883,11 +892,6 @@ form input {
     content: url("./Assets/Shapes/img-12-desktop.svg");
   }
 
-  /* animations */
-  .desktop-navbar li {
-    animation: nav-hover 1s ease-in;
-  }
-
   .desktop-navbar li:hover {
     transform: scale(1.2);
     transition: 0.3s;
@@ -895,10 +899,6 @@ form input {
 
   .desktop-navbar li:hover a {
     color: #36b37e;
-  }
-
-  .primary h1 {
-    animation: heading-load 1s ease-out;
   }
 
   @keyframes heading-load {
@@ -913,10 +913,6 @@ form input {
     100% {
       transform: translateY(1);
     }
-  }
-
-  .supporting-text p {
-    animation: header-text 1s ease-out;
   }
 
   @keyframes header-text {
@@ -942,6 +938,7 @@ form input {
       transform: scale(1);
       transition: 0.3s;
     }
+    
     to {
       transform: scale(1.5);
       transition: 0.3s;
