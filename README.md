@@ -82,7 +82,7 @@ No test are available
 
 ### Deployment
 
-You can deploy this project using GitHub Pages
+This project is deployed at github pages you can find it at https://kalbek.github.io/Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,6 +93,7 @@ You can deploy this project using GitHub Pages
 - GitHub: [@githubhandle](https://github.com/kalbek)
 - Twitter: [@twitterhandle](https://twitter.com/KNuramo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaleb-nuramo/)
+- Website: https://kalbek.github.io/Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
