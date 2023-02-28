@@ -80,11 +80,12 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 19px;
+  line-height: 26px;
   text-align: center;
   color: #172b4d;
   margin-bottom: 4rem;
+  z-index: 1;
 }
 
 .tags ul li {
@@ -572,8 +573,9 @@ form input {
   body {
     display: flex;
     max-width: 100%;
+    margin: 0 auto;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-image: url("./Assets/Images/background-desktop.svg");
     background-position: center 0%;
     background-size: contain;
@@ -661,6 +663,7 @@ form input {
   }
 
   .shape-11 {
+    z-index: 0;
     animation-name: out;
     animation-duration: 1s;
     position: absolute;
@@ -744,6 +747,7 @@ form input {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3.5rem;
+    margin-top: 8%;
   }
 
   .card-work ul:not(:first-child) {
@@ -782,11 +786,8 @@ form input {
     display: none;
   }
 
-  .about-me {
-    margin-top: 8%;
-  }
-
   .about-me .supporting-text p {
+    margin-left: 3rem;
     padding: 0 6%;
   }
 
@@ -854,6 +855,7 @@ form input {
     text-align: left;
     margin-top: 3rem;
     margin-left: -3rem;
+    z-index: 1;
   }
 
   .contact {
@@ -865,6 +867,10 @@ form input {
   .shape-10,
   .about-me .contact {
     display: none;
+  }
+
+  .contact button {
+    z-index: 1;
   }
 
   .about-me-cards {
@@ -885,6 +891,7 @@ form input {
   }
 
   .shape-12 {
+    z-index: 0;
     animation: in_shape-12 21;
     position: absolute;
     margin-top: 20rem;
