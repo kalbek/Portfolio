@@ -382,19 +382,25 @@
       <section class="contact">
         <div class="container">
           <form action="https://formspree.io/f/xjvdwpvn" method="POST">
+            <label for="user_name" class="hidden_element"> Full name</label>
             <input
               type="text"
               name="name"
+              id="user_name"
               maxlength="30"
               placeholder="  Full name"
               required
             />
+            <label for="email_address" class="hidden_element"
+              >Email address</label
+            >
             <input
               type="email"
               name="email"
               placeholder="  Email address"
               required
             />
+            <label for="message" class="hidden_element">Leave a message</label>
             <div class="mobile-textarea">
               <textarea
                 id="primary-rich-textbox"
@@ -407,6 +413,7 @@
                 required
               ></textarea>
             </div>
+            <label for="message" class="hidden_element">Leave a message</label>
             <div class="desktop-textarea">
               <textarea
                 id="primary-rich-textbox2"
