@@ -7,6 +7,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [🛠 Walkthough](#Walkthough)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -29,6 +30,11 @@
 # 📖 Portfolio<a name="about-project"></a>
 
 **Portfolio** is a project initiated during the first module of the microverse program. This project is aimed to create a professional portfolio.
+
+## 🛠 Walkthought
+
+watch the loom video to the walkthrough of this video at:
+https://www.loom.com/share/4679e5bb203e4d5aa4aea6bb67035886
 
 ## 🛠 Built With <a name="built-with"></a>
 
