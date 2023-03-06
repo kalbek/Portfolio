@@ -610,6 +610,17 @@ form input {
   z-index: 2;
 }
 
+.mobile-menu-active .container{
+  position: fixed;
+  width: 100%;
+  height: 92%;
+  left: 0.001px;
+  right: 0.001px;
+  border-radius:0 0 2rem 2rem;
+  background-color: #fff;
+  z-index: 3;
+}
+
 .animate-from-top {
   animation: appear-from-top 0.3s ease-out;
 }
@@ -626,11 +637,7 @@ form input {
   50% {
     transform: translateY(50%);
   }
-
-  90% {
-    transform: translateY(120%);
-  }
-
+ 
   100% {
     transform: translateY(100%);
   }
@@ -651,6 +658,9 @@ form input {
 }
 
 .mobile-menu-active .container .close-mobile-menu {
+  position: absolute;
+  left: 80%;
+  bottom: 94%;
   margin-top: 5%;
   margin-right: 2rem;
 }
@@ -974,16 +984,6 @@ form input {
   .card-work .card {
     width: 369px;
     height: 474px;
-  }
-
-  .mobile-menu-active .container {
-    position: absolute;
-    height: 95%;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 0 0 2rem 2rem;
-    display: flex;
-    justify-content: space-between;
   }
 
   .card-work .card .subcard {
