@@ -150,6 +150,22 @@ body {
   justify-content: start;
 }
 
+.mobile-menu-active ul {
+  margin-left: -1rem;
+  padding-top: 8%;
+}
+
+.mobile-menu-active ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  list-style: none;
+  padding-left: 20px;
+}
+
 .primary .social-media-icons ul li {
   margin-left: 1rem;
   float: right;
@@ -639,11 +655,6 @@ form input {
   margin-right: 2rem;
 }
 
-.mobile-menu-active ul {
-  margin-left: -1rem;
-  padding-top: 8%;
-}
-
 .visible {
   display: block;
 }
@@ -651,18 +662,6 @@ form input {
 .hidden {
   display: none;
 }
-
-.mobile-menu-active ul li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #3a4a42;
-  list-style: none;
-  padding-left: 20px;
-}
-
 
 /* styling details popup for mobile */
 #mobile-details-popup {
@@ -686,12 +685,10 @@ form input {
 }
 
 #mobile-details-popup .tags {
-  /* position: absolute; */
   left: -1rem;
   margin-left: -2rem;
   margin-top: -1rem;
   padding-bottom: 1rem;
-  /* width: auto; */
 }
 
 #mobile-details-popup .container .sub-container {
