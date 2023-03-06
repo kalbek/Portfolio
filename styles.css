@@ -105,6 +105,21 @@ body {
   top: 6%;
 }
 
+.mobile-menu-active ul li {
+  padding-bottom: 1rem;
+}
+
+.mobile-menu-active ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  list-style: none;
+  padding-left: 20px;
+}
+
 .card-2 .tags li {
   height: 40px;
   border-radius: 8px;
@@ -630,39 +645,14 @@ form input {
   }
 }
 
-.mobile-menu-active .container {
-  position: absolute;
-  height: 95%;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0 0 2rem 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-
 .mobile-menu-active .container .close-mobile-menu {
   margin-top: 5%;
   margin-right: 2rem;
 }
 
-.mobile-menu-active ul li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #3a4a42;
-  list-style: none;
-  padding-left: 20px;
-}
-
 .mobile-menu-active ul {
   margin-left: -1rem;
   padding-top: 8%;
-}
-
-.mobile-menu-active ul li {
-  padding-bottom: 1rem;
 }
 
 .visible {
@@ -986,6 +976,16 @@ form input {
   .card-work .card {
     width: 369px;
     height: 474px;
+  }
+
+  .mobile-menu-active .container {
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   .card-work .card .subcard {
