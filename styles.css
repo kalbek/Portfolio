@@ -782,7 +782,7 @@ form input {
   body {
     display: flex;
     max-width: 100%;
-    width: 0 auto;
+    width: auto;
     flex-direction: column;
     align-items: center;
     background-image: url("./Assets/Images/background-desktop.svg");
