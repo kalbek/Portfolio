@@ -1,4 +1,4 @@
-function main () {
+function main (){
   const openMenu = document.getElementById('open-mobile-menu');
   const closeMenu = document.getElementById('close-mobile-menu');
   const mobilePortfolio = document.getElementById('mobile-portfolio');
@@ -32,5 +32,5 @@ function main () {
   mobileContact.addEventListener('click', () => {
     closeMobileMenu();
   });
-};
+}
 main();
