@@ -109,17 +109,6 @@ body {
   padding-bottom: 1rem;
 }
 
-.mobile-menu-active ul li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #3a4a42;
-  list-style: none;
-  padding-left: 20px;
-}
-
 .card-2 .tags li {
   height: 40px;
   border-radius: 8px;
@@ -662,6 +651,18 @@ form input {
 .hidden {
   display: none;
 }
+
+.mobile-menu-active ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  list-style: none;
+  padding-left: 20px;
+}
+
 
 /* styling details popup for mobile */
 #mobile-details-popup {
