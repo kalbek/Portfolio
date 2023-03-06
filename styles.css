@@ -624,25 +624,25 @@ form input {
   }
 
   50% {
-    transform: translateY(0.5);
+    transform: translateY(50%);
   }
 
   90% {
-    transform: translateY(1.2);
+    transform: translateY(120%);
   }
 
   100% {
-    transform: translateY(1);
+    transform: translateY(100%);
   }
 }
 
 @keyframes appear-from-bottom {
   0% {
-    transform: translateY(1);
+    transform: translateY(100%);
   }
 
   90% {
-    transform: translateY(0.5);
+    transform: translateY(50%);
   }
 
   100% {
@@ -782,7 +782,7 @@ form input {
   body {
     display: flex;
     max-width: 100%;
-    width: 0 auto;
+    width: 0.001px auto;
     flex-direction: column;
     align-items: center;
     background-image: url("./Assets/Images/background-desktop.svg");
@@ -1141,11 +1141,11 @@ form input {
     }
 
     90% {
-      transform: translateY(1.2);
+      transform: translateY(120%);
     }
 
     100% {
-      transform: translateY(1);
+      transform: translateY(100%);
     }
   }
 
@@ -1155,11 +1155,11 @@ form input {
     }
 
     90% {
-      transform: translateY(1.2);
+      transform: translateY(120%);
     }
 
     100% {
-      transform: translateY(1);
+      transform: translateY(100%);
     }
   }
 
