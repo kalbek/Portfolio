@@ -27,4 +27,4 @@ function main() {
     closeMobileMenu();
   });
 }
-main(); 
+main();
