@@ -155,17 +155,6 @@ body {
   padding-top: 8%;
 }
 
-.mobile-menu-active ul li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #3a4a42;
-  list-style: none;
-  padding-left: 20px;
-}
-
 .primary .social-media-icons ul li {
   margin-left: 1rem;
   float: right;
@@ -454,6 +443,17 @@ form button:active {
   align-items: center;
   text-align: center;
   color: #344563;
+}
+
+.mobile-menu-active ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  list-style: none;
+  padding-left: 20px;
 }
 
 .card-2 .tags a {
