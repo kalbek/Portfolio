@@ -26,6 +26,5 @@ function main() {
   mobileContact.addEventListener('click', () => {
     closeMobileMenu();
   });
-  }
-  main();
-  
+}
+main(); 
