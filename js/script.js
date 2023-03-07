@@ -195,6 +195,14 @@ function main() {
       taglis.appendChild(as);
       as.textContent = tech.name;
     });
+    //   create the button
+    let button = document.createElement("div");
+    container.appendChild(button);
+    button.classList.add("btn-primary");
+    //   create the a tag inside button
+    let atag = document.createElement("a");
+    button.appendChild(atag);
+    atag.textContent = "See Project";
   });
 }
 main();
