@@ -659,8 +659,8 @@ form input {
 
 .mobile-menu-active .container .close-mobile-menu {
   position: absolute;
-  left: 80%;
-  bottom: 94%;
+  left: 87%;
+  bottom: 93.5%;
   margin-top: 5%;
   margin-right: 2rem;
 }
@@ -1139,27 +1139,11 @@ form input {
     0% {
       transform: translateY(-40%);
     }
-
-    90% {
-      transform: translateY(120%);
-    }
-
-    100% {
-      transform: translateY(100%);
-    }
   }
 
   @keyframes header-text {
     0% {
       transform: translateY(40%);
-    }
-
-    90% {
-      transform: translateY(120%);
-    }
-
-    100% {
-      transform: translateY(100%);
     }
   }
 
