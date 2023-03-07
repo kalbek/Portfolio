@@ -674,41 +674,59 @@ form input {
 }
 
 /* styling details popup for mobile */
-#mobile-details-popup {
-  position: absolute;
+#details-popup {
+  position: fixed;
   z-index: 5;
-  height: 135vh;
+  height: 100%;
+  overflow: scroll;
   width: 100%;
   background-color: #c1c7d0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
-#mobile-details-popup .snapshot-img img {
+.snapshot-img {
+  position: relative;
+}
+
+.close-mobile-details {
+  position: absolute;
+  top: 7.3%;
+  right: 5.2%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid maroon;
+}
+
+#details-popup .snapshot-img img {
   width: 100%;
 }
 
-#mobile-details-popup .container {
+#details-popup .container {
+  position: relative;
   padding: 1rem;
-  height: 100%;
+  height: 140%;
+  margin-bottom: 1rem;
 }
 
-#mobile-details-popup .tags {
-  left: -1rem;
+#details-popup .tags {
+  position: absolute;
+  left: 5.4%;
+  top: 63%;
   margin-left: -2rem;
   margin-top: -1rem;
   padding-bottom: 1rem;
 }
 
-#mobile-details-popup .container .sub-container {
+#details-popup .container .sub-container {
   background-color: #fff;
   border-radius: 1rem;
-  height: 100%;
+  height: 130%;
   padding: 1rem;
 }
 
-#mobile-details-popup .container .sub-container .tags ul {
+#details-popup .container .sub-container .tags ul {
   display: flex;
   left: 0;
   float: left;
@@ -716,20 +734,32 @@ form input {
   justify-content: flex-start;
 }
 
-#mobile-details-popup .container .sub-container .tags ul li {
+#details-popup .container .sub-container .tags ul li {
   margin-right: 0.5rem;
 }
 
-#mobile-details-popup .text {
+#details-popup .text {
+  position: absolute;
+  top: 64%;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  overflow: auto;
+  padding-right: 2rem;
 }
 
-#mobile-details-popup h2 {
+#details-popup .text p {
+  width: fit-content;
+
+  word-break: normal;
+}
+
+#details-popup h2 {
+  position: absolute;
+  top: 35%;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -738,14 +768,9 @@ form input {
   color: #172b4d;
 }
 
-#mobile-details-popup .seelive,
-#mobile-details-popup .seesource {
-  display: flex;
-  width: 20%;
-}
-
-#mobile-details-popup .buttons {
+#details-popup .buttons {
   position: absolute;
+  top: 114.5%;
   left: 1rem;
   display: flex;
   justify-content: space-between;
@@ -753,8 +778,8 @@ form input {
   gap: 12px;
 }
 
-#mobile-details-popup .buttons .seelive,
-#mobile-details-popup .buttons .seesource {
+#details-popup .buttons .seelive,
+#details-popup .buttons .seesource {
   background: #36b37f;
   border-radius: 4px;
   text-align: center;
@@ -768,8 +793,8 @@ form input {
   padding: 0 1rem;
 }
 
-#mobile-details-popup .buttons .seelive p,
-#mobile-details-popup .buttons .seesource p {
+#details-popup .buttons .seelive p,
+#details-popup .buttons .seesource p {
   color: #fff;
   font-style: normal;
   font-family: "Inter", sans-serif;
@@ -783,8 +808,8 @@ form input {
   float: left;
 }
 
-#mobile-details-popup .buttons .seelive i,
-#mobile-details-popup .buttons .seesource i {
+#details-popup .buttons .seelive i,
+#details-popup .buttons .seesource i {
   margin-top: 0.7rem;
 }
 
