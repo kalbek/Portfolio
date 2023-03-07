@@ -179,14 +179,14 @@ function main() {
     projectTitle.appendChild(title);
     title.textContent = card.name;
     // create tags
+    let tags = document.createElement("div");
+    container.appendChild(tags);
+    tags.classList.add("tags");
+    // create ul inside tags
+    let taguls = document.createElement("ul");
+    tags.appendChild(taguls);
     //   now for technologies
     card.technologies.forEach((tech) => {
-      let tags = document.createElement("div");
-      container.appendChild(tags);
-      tags.classList.add("tags");
-      // create ul inside tags
-      let taguls = document.createElement("ul");
-      tags.appendChild(taguls);
       // create li inside the ul's
       let taglis = document.createElement("li");
       taguls.appendChild(taglis);

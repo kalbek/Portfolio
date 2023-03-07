@@ -90,12 +90,19 @@ body {
 
 .tags ul li {
   float: right;
+  height: fit-content;
+  width: fit-content;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 9px;
   background: #ebf0ee;
   border-radius: 4px;
   list-style-type: none;
   margin-top: -1rem;
+}
+
+.tags ul li a {
+  float: left;
+  text-align: center;
 }
 
 .about-me .supporting-text {
