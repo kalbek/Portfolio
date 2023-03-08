@@ -203,6 +203,27 @@ function main() {
     let atag = document.createElement("a");
     button.appendChild(atag);
     atag.textContent = "See Project";
+    // create click event for see project button to display details button
+    const details = document.querySelector("#details-popup-section");
+    button.addEventListener("click", () => {
+      console.log(button.parentNode.parentElement.firstChild.textContent);
+      details.classList.remove("hidden");
+      details.classList.add("visible");
+    });
+    // click event for close button on details popup
+    const closeMobileDetails = document.querySelector(".close-mobile-details");
+    closeMobileDetails.addEventListener("click", () => {
+      details.classList.remove("visible");
+      details.classList.add("hidden");
+    });
+    // click event for close button on desktop version of details popup
+    const closeDesktopDetails = document.querySelector(
+      ".close-desktop-details"
+    );
+    // closeDesktopDetails = document.addEventListener("click"){
+    //   details.classList.remove("visible");
+    //   details.classList.add("hidden");
+    // }
   });
 }
 main();
