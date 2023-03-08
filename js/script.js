@@ -200,9 +200,9 @@ function main() {
     container.appendChild(seeProjectButton);
     seeProjectButton.classList.add('btn-primary');
     //   create the a tag inside button
-    const a_tag = document.createElement('a');
-    seeProjectButton.appendChild(a_tag);
-    a_tag.textContent = 'See Project';
+    const aTag = document.createElement('a');
+    seeProjectButton.appendChild(aTag);
+    aTag.textContent = 'See Project';
     // create the technologies for popups based on the list of technologies
     // selected from the details
 
@@ -210,13 +210,11 @@ function main() {
     const details = document.querySelector('#details-popup-section');
     seeProjectButton.addEventListener('click', () => {
       // update details heading with project title of selected project
-      const details_heading = document.getElementById('details-heading');
-      details_heading.textContent = card.name;
+      const detailsHeading = document.getElementById('details-heading');
+      detailsHeading.textContent = card.name;
       // update text content of the details card with data from object
-      const details_text_content = document.getElementById(
-        'details-text-content'
-      );
-      details_text_content.textContent = card.description;
+      const detailsTextContent = document.getElementById('details-text-content');
+      detailsTextContent.textContent = card.description;
       // then display the popup
       details.classList.remove('hidden');
       details.classList.add('visible');
@@ -231,9 +229,10 @@ function main() {
         techATag.textContent = tech.name;
       });
     });
-
+    
     // click event for close button on mobile version of details popup
     const closeMobileDetails = document.querySelector('.close-mobile-details');
+    const detailsTechUl = document.querySelector('#details-popup-tags ul');
     closeMobileDetails.addEventListener('click', () => {
       details.classList.remove('visible');
       details.classList.add('hidden');
@@ -242,9 +241,7 @@ function main() {
       if (removables !== null) detailsTechUl.removeChild(removables);
     });
     // click event for close button on desktop version of details popup
-    const closeDesktopDetails = document.querySelector(
-      '.close-desktop-details'
-    );
+    const closeDesktopDetails = document.querySelector('.close-desktop-details');
     closeDesktopDetails.addEventListener('click', () => {
       details.classList.remove('visible');
       details.classList.add('hidden');
