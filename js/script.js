@@ -205,7 +205,6 @@ function main() {
     aTag.textContent = 'See Project';
     // create the technologies for popups based on the list of technologies
     // selected from the details
-
     // CREATE CLICK EVENT FOR 'SEE PROJECT' BUTTON TO TRIGGER DETAILS POPUP
     const details = document.querySelector('#details-popup-section');
     seeProjectButton.addEventListener('click', () => {
@@ -228,8 +227,7 @@ function main() {
         listTech.appendChild(techATag);
         techATag.textContent = tech.name;
       });
-    });
-    
+    });    
     // click event for close button on mobile version of details popup
     const closeMobileDetails = document.querySelector('.close-mobile-details');
     const detailsTechUl = document.querySelector('#details-popup-tags ul');
