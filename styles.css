@@ -837,7 +837,7 @@ form input {
   justify-content: space-between;
   width: fit-content;
   gap: 1rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 #details-popup .buttons .seelive p,
@@ -896,7 +896,6 @@ form input {
     top: 1rem;
     right: 2rem;
     margin-bottom: 1rem;
-    
   }
 
   .headline {
