@@ -802,8 +802,9 @@ form input {
 
 #details-popup .buttons {
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: flex-start;
+  margin-bottom: -9rem;
+  gap: 1rem;
 }
 
 #details-popup .buttons .seelive,
@@ -1016,6 +1017,11 @@ form input {
     display: none;
   }
 
+  #details-popup-section {
+    position: fixed;
+    z-index: 10;
+  }
+
   #details-popup {
     display: flex;
     position: fixed;
@@ -1023,7 +1029,7 @@ form input {
     align-items: center;
     margin: 0 auto;
     height: auto;
-    padding: 10rem 18% 7rem 18%;
+    padding: 10rem 18% 0 18%;
     overflow-y: scroll;
   }
 
