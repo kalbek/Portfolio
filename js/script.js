@@ -227,7 +227,7 @@ function main() {
         listTech.appendChild(techATag);
         techATag.textContent = tech.name;
       });
-    });    
+    });
     // click event for close button on mobile version of details popup
     const closeMobileDetails = document.querySelector('.close-mobile-details');
     const detailsTechUl = document.querySelector('#details-popup-tags ul');
