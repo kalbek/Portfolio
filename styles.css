@@ -1022,14 +1022,21 @@ form input {
     margin-top: 8%;
   }
 
-  .card-work ul:not(:first-child) {
-    margin-left: 10px;
-  }
-
   .card-work .card {
     width: 369px;
     height: 474px;
+    margin-bottom: -10.5rem;
   }
+
+  .card-work{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+
 
   .card-work .card .subcard {
     display: flex;
@@ -1056,6 +1063,10 @@ form input {
   .shape-8,
   .shape-9 {
     display: none;
+  }
+
+  .about-me {
+    margin-top: 16rem;
   }
 
   .about-me .supporting-text p {
