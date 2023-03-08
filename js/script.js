@@ -1,29 +1,29 @@
 function main() {
-  const openMenu = document.getElementById("open-mobile-menu");
-  const closeMenu = document.getElementById("close-mobile-menu");
-  const mobilePortfolio = document.getElementById("mobile-portfolio");
-  const mobileAbout = document.getElementById("mobile-about");
-  const mobileContact = document.getElementById("mobile-contact");
+  const openMenu = document.getElementById('open-mobile-menu');
+  const closeMenu = document.getElementById('close-mobile-menu');
+  const mobilePortfolio = document.getElementById('mobile-portfolio');
+  const mobileAbout = document.getElementById('mobile-about');
+  const mobileContact = document.getElementById('mobile-contact');
   function closeMobileMenu() {
-    const mobileMenu = document.querySelector("#mobile-menu-active");
-    mobileMenu.classList.remove("visible");
-    mobileMenu.classList.add("hidden");
+    const mobileMenu = document.querySelector('#mobile-menu-active');
+    mobileMenu.classList.remove('visible');
+    mobileMenu.classList.add('hidden');
   }
-  openMenu.addEventListener("click", () => {
-    const mobileMenu = document.querySelector("#mobile-menu-active");
-    mobileMenu.classList.remove("hidden");
-    mobileMenu.classList.add("visible");
+  openMenu.addEventListener('click', () => {
+    const mobileMenu = document.querySelector('#mobile-menu-active');
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('visible');
   });
-  closeMenu.addEventListener("click", () => {
+  closeMenu.addEventListener('click', () => {
     closeMobileMenu();
   });
-  mobilePortfolio.addEventListener("click", () => {
+  mobilePortfolio.addEventListener('click', () => {
     closeMobileMenu();
   });
-  mobileAbout.addEventListener("click", () => {
+  mobileAbout.addEventListener('click', () => {
     closeMobileMenu();
   });
-  mobileContact.addEventListener("click", () => {
+  mobileContact.addEventListener('click', () => {
     closeMobileMenu();
   });
   const cards = [
@@ -148,109 +148,108 @@ function main() {
       ],
     },
   ];
-
   // create project details cards dynamically on page load
   cards.forEach((card) => {
-    let dynamicCard = document.querySelector("#card-work");
+    let dynamicCard = document.querySelector('#card-work');
     //   create ul inside card-work
-    let topul = document.createElement("ul");
+    let topul = document.createElement('ul');
     dynamicCard.appendChild(topul);
     //   create li's inside topul
-    let topulli = document.createElement("li");
+    let topulli = document.createElement('li');
     topul.appendChild(topulli);
     //   create the 'card card-1' div inside top ul li
-    let card1Div = document.createElement("div");
+    let card1Div = document.createElement('div');
     topulli.appendChild(card1Div);
-    card1Div.classList.add("card");
-    card1Div.classList.add("card-1");
+    card1Div.classList.add('card');
+    card1Div.classList.add('card-1');
     // create the 'subcard'
-    let subcard = document.createElement("div");
+    let subcard = document.createElement('div');
     card1Div.appendChild(subcard);
-    subcard.classList.add("subcard");
+    subcard.classList.add('subcard');
     // create container
-    let container = document.createElement("div");
+    let container = document.createElement('div');
     subcard.appendChild(container);
-    container.classList.add("container");
+    container.classList.add('container');
     //   create the project title
-    let projectTitle = document.createElement("div");
+    let projectTitle = document.createElement('div');
     container.appendChild(projectTitle);
-    projectTitle.classList.add("project-title");
+    projectTitle.classList.add('project-title');
     //   create content for li
-    let title = document.createElement("h3");
+    let title = document.createElement('h3');
     projectTitle.appendChild(title);
     title.textContent = card.name;
     // create tags
-    let tags = document.createElement("div");
+    let tags = document.createElement('div');
     container.appendChild(tags);
-    tags.classList.add("tags");
+    tags.classList.add('tags');
     // create ul inside tags
-    let taguls = document.createElement("ul");
+    let taguls = document.createElement('ul');
     tags.appendChild(taguls);
     //   now for technologies
     card.technologies.forEach((tech) => {
       // create li inside the ul's
-      let taglis = document.createElement("li");
+      let taglis = document.createElement('li');
       taguls.appendChild(taglis);
       // create a's inside li's
-      let as = document.createElement("a");
+      let as = document.createElement('a');
       taglis.appendChild(as);
       as.textContent = tech.name;
     });
     //   create the button
-    let seeProjectButton = document.createElement("div");
+    let seeProjectButton = document.createElement('div');
     container.appendChild(seeProjectButton);
-    seeProjectButton.classList.add("btn-primary");
+    seeProjectButton.classList.add('btn-primary');
     //   create the a tag inside button
-    let a_tag = document.createElement("a");
+    let a_tag = document.createElement('a');
     seeProjectButton.appendChild(a_tag);
-    a_tag.textContent = "See Project";
+    a_tag.textContent = 'See Project';
     // create the technologies for popups based on the list of technologies selected from the details
 
     // CREATE CLICK EVENT FOR 'SEE PROJECT' BUTTON TO TRIGGER DETAILS POPUP
-    const details = document.querySelector("#details-popup-section");
-    seeProjectButton.addEventListener("click", () => {
+    const details = document.querySelector('#details-popup-section');
+    seeProjectButton.addEventListener('click', () => {
       // update details heading with project title of selected project
-      const details_heading = document.getElementById("details-heading");
+      const details_heading = document.getElementById('details-heading');
       details_heading.textContent = card.name;
       // update text content of the details card with data from object
       const details_text_content = document.getElementById(
-        "details-text-content"
+        'details-text-content'
       );
       details_text_content.textContent = card.description;
       // then display the popup
-      details.classList.remove("hidden");
-      details.classList.add("visible");
+      details.classList.remove('hidden');
+      details.classList.add('visible');
       // create the technologies for popups based on the list of technologies selected from the details
       // // create the technologies also for the popups 
-      let det_tec_ul = document.querySelector("#details-popup-tags ul");
+      let det_tec_ul = document.querySelector('#details-popup-tags ul');
       card.technologies.forEach((tech) => {
-        let list_tech = document.createElement("li");
+        let list_tech = document.createElement('li');
         det_tec_ul.appendChild(list_tech);
-        const tech_a_tag = document.createElement("a");
+        const tech_a_tag = document.createElement('a');
         list_tech.appendChild(tech_a_tag);
         tech_a_tag.textContent = tech.name;
       });
     });
 
     // click event for close button on mobile version of details popup
-    const closeMobileDetails = document.querySelector(".close-mobile-details");
-    closeMobileDetails.addEventListener("click", () => {
-      details.classList.remove("visible");
-      details.classList.add("hidden");
+    const closeMobileDetails = document.querySelector('.close-mobile-details');
+    closeMobileDetails.addEventListener('click', () => {
+      details.classList.remove('visible');
+      details.classList.add('hidden');
       // clear list of technologies from popup upon close
-      let removables = document.querySelector("#details-popup-tags ul li");
+      let removables = document.querySelector('#details-popup-tags ul li');
       if (removables !== null) det_tec_ul.removeChild(removables);
     });
     // click event for close button on desktop version of details popup
     const closeDesktopDetails = document.querySelector(
-      ".close-desktop-details"
+      '.close-desktop-details'
     );
-    closeDesktopDetails.addEventListener("click", () => {
-      details.classList.remove("visible");
-      details.classList.add("hidden");
+    closeDesktopDetails.addEventListener('click', () => {
+      details.classList.remove('visible');
+      details.classList.add('hidden');
       // clear list of technologies from popup upon close
-      let det_tec_ul = document.querySelector("#details-popup-tags ul");
-      let removables = document.querySelector("#details-popup-tags ul li");
+      let det_tec_ul = document.querySelector('#details-popup-tags ul');
+      let removables = document.querySelector('#details-popup-tags ul li');
       if (removables !== null) det_tec_ul.removeChild(removables);
     });
   });
