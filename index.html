@@ -22,60 +22,47 @@
       </div>
     </header>
     <main>
-      <!-- details popup mobile -->
-      <section>
-        <!-- <div id="mobile-details-popup">
+      <!-- details popup -->
+      <section class="hidden" id="details-popup-section">
+        <div id="details-popup">
           <div class="container">
             <div class="sub-container">
+              <div class="close-desktop-details"></div>
               <div class="snapshot-img">
-                <img src="./Assets/Images/mobile-snapshot-image.svg" alt="" />
+                <div class="img"></div>
+                <div class="close-mobile-details"></div>
               </div>
-              <div class="heading">
-                <h2>Keeping track of hundreds of components</h2>
-              </div>
-              <div class="tags">
-                <ul>
-                  <li><a href="">Ruby on rails</a></li>
-                  <li><a href="">css</a></li>
-                  <li><a href="">JavaScript</a></li>
-                </ul>
-              </div>
-              <div class="text">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it 1960s with the
-                  releaLorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it 1960s with the
-                  relea
-                </p>
-              </div>
-              <div class="buttons">
-                <div class="seelive">
-                  <p>See Live</p>
-                  <i class="see-live"
-                    ><img src="./Assets/Images/mobile-seelive-icon.svg" alt=""
-                  /></i>
+              <div class="content">
+                <div class="heading">
+                  <h2 id="details-heading"></h2>
                 </div>
-                <div class="seesource">
-                  <p>See Source</p>
-                  <i class="see-live"
-                    ><img src="./Assets/Images/mobile-github-icon.svg" alt=""
-                  /></i>
+                <div class="tags" id="details-popup-tags">
+                  <ul></ul>
+                </div>
+                <div class="text">
+                  <p id="details-text-content"></p>
+                </div>
+                <div class="buttons">
+                  <div class="seelive">
+                    <p>See Live</p>
+                    <i class="see-live"
+                      ><img
+                        src="./Assets/Images/mobile-seelive-icon.svg"
+                        alt=""
+                    /></i>
+                  </div>
+                  <div class="seesource">
+                    <p>See Source</p>
+                    <i class="see-live"
+                      ><img src="./Assets/Images/mobile-github-icon.svg" alt=""
+                    /></i>
+                  </div>
                 </div>
               </div>
             </div>
+            <br />
           </div>
-        </div> -->
-        <!-- lighthouse check-1 -->
-        <!-- lighthouse check-2 -->
-        <!-- lighthouse check-3 -->
-        <!-- lighthouse check-4 -->
-        <!-- lighthouse check-5 -->
-        <!-- lighthouse check-6 -->
+        </div>
       </section>
       <!-- mobile menu active state -->
       <section id="mobile-menu-active" class="mobile-menu-active hidden">
@@ -205,161 +192,8 @@
             <div class="icon"></div>
           </div>
         </div>
-        <div class="card-work">
-          <ul>
-            <br />
-            <li>
-              <div class="card card-1">
-                <div class="subcard">
-                  <div class="container">
-                    <div class="project-title">
-                      <h3>Multi-Post Stories Gain+Glory</h3>
-                    </div>
-                    <div class="tags">
-                      <ul>
-                        <li>
-                          <a>Ruby on rails</a>
-                        </li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">javaScript</a></li>
-                        <li><a href="">html</a></li>
-                      </ul>
-                    </div>
-                    <div class="btn-primary">
-                      <a href="#">See Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <br />
-            <li>
-              <div class="card card-1">
-                <div class="subcard">
-                  <div class="container">
-                    <div class="project-title">
-                      <h3>Multi-Post Stories Gain+Glory</h3>
-                    </div>
-                    <div class="tags">
-                      <ul>
-                        <li>
-                          <a href="">Ruby on rails</a>
-                        </li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">javaScript</a></li>
-                        <li><a href="">html</a></li>
-                      </ul>
-                    </div>
-                    <div class="btn-primary">
-                      <a href="#">See Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <br />
-            <li>
-              <div class="card card-1">
-                <div class="subcard">
-                  <div class="container">
-                    <div class="project-title">
-                      <h3>Multi-Post Stories Gain+Glory</h3>
-                    </div>
-                    <div class="tags">
-                      <ul>
-                        <li>
-                          <a href="">Ruby on rails</a>
-                        </li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">javaScript</a></li>
-                        <li><a href="">html</a></li>
-                      </ul>
-                    </div>
-                    <div class="btn-primary">
-                      <a href="#">See Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <br />
-            <li>
-              <div class="card card-1">
-                <div class="subcard">
-                  <div class="container">
-                    <div class="project-title">
-                      <h3>Multi-Post Stories Gain+Glory</h3>
-                    </div>
-                    <div class="tags">
-                      <ul>
-                        <li>
-                          <a href="">Ruby on rails</a>
-                        </li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">javaScript</a></li>
-                        <li><a href="">html</a></li>
-                      </ul>
-                    </div>
-                    <div class="btn-primary">
-                      <a href="#">See Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <br />
-            <li>
-              <div class="card card-1">
-                <div class="subcard">
-                  <div class="container">
-                    <div class="project-title">
-                      <h3>Multi-Post Stories Gain+Glory</h3>
-                    </div>
-                    <div class="tags">
-                      <ul>
-                        <li class="tag">
-                          <a href="">Ruby on rails</a>
-                        </li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">javaScript</a></li>
-                        <li><a href="">html</a></li>
-                      </ul>
-                    </div>
-                    <div class="btn-primary">
-                      <a href="#">See Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <br />
-            <li>
-              <div class="card card-1">
-                <div class="subcard">
-                  <div class="container">
-                    <div class="project-title">
-                      <h3>Multi-Post Stories Gain+Glory</h3>
-                    </div>
-                    <div class="tags">
-                      <ul>
-                        <li>
-                          <a href="">Ruby on rails</a>
-                        </li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">javaScript</a></li>
-                        <li><a href="">html</a></li>
-                      </ul>
-                    </div>
-                    <div class="btn-primary">
-                      <a href="#">See Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <br />
-          </ul>
-        </div>
+        <!-- DETAILS CARDS GOES HERE -->
+        <div class="card-work" id="card-work"></div>
       </section>
       <section id="about-me" class="about-me">
         <div class="flex">
