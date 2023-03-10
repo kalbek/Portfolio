@@ -287,22 +287,29 @@
       </section>
       <section id="contact" class="contact">
         <div class="container">
-          <form action="https://formspree.io/f/xjvdwpvn" method="POST">
-            <label for="user_name" class="hidden_element"> Full name</label>
-            <input
-              type="text"
-              name="name"
-              id="user_name"
-              maxlength="30"
-              placeholder="  Full name"
-              required
-            />
+          <form
+            action="https://formspree.io/f/xjvdwpvn"
+            method="POST"
+            id="form"
+          >
+          <label for="user_name" class="hidden_element"> Full name</label>
+          <div id="email-error-message">error</div>
+          <br>
+          <input
+          type="text"
+          name="name"
+          id="user_name"
+          maxlength="30"
+          placeholder="  Full name"
+          required
+          />
             <label for="email_address" class="hidden_element"
               >Email address</label
             >
             <input
               type="email"
               name="email"
+              id="email"
               placeholder="  Email address"
               required
             />
@@ -316,7 +323,6 @@
                 cols="43"
                 maxlength="500"
                 placeholder=" Enter text here"
-                required
               ></textarea>
             </div>
             <label for="message" class="hidden_element">Leave a message</label>
@@ -324,7 +330,6 @@
               <textarea
                 id="primary-rich-textbox2"
                 class="primary-rich-textbox"
-                name="message"
                 cols="100"
                 placeholder=" Typing Something"
                 required
