@@ -1,31 +1,19 @@
 function main() {
   const openMenu = document.getElementById('open-mobile-menu');
-  const closeMenu = document.getElementById('close-mobile-menu');
-  const mobilePortfolio = document.getElementById('mobile-portfolio');
-  const mobileAbout = document.getElementById('mobile-about');
-  const mobileContact = document.getElementById('mobile-contact');
-  function closeMobileMenu() {
-    const mobileMenu = document.querySelector('#mobile-menu-active');
-    mobileMenu.classList.remove('visible');
-    mobileMenu.classList.add('hidden');
-  }
+  const closeMenu = document.querySelectorAll('.close');
+
   openMenu.addEventListener('click', () => {
     const mobileMenu = document.querySelector('#mobile-menu-active');
     mobileMenu.classList.remove('hidden');
     mobileMenu.classList.add('visible');
   });
-  closeMenu.addEventListener('click', () => {
-    closeMobileMenu();
-  });
-  mobilePortfolio.addEventListener('click', () => {
-    closeMobileMenu();
-  });
-  mobileAbout.addEventListener('click', () => {
-    closeMobileMenu();
-  });
-  mobileContact.addEventListener('click', () => {
-    closeMobileMenu();
-  });
+  closeMenu.forEach(menu => {
+    menu.addEventListener('click', () => {
+      const mobileMenu = document.querySelector('#mobile-menu-active');
+      mobileMenu.classList.remove('visible');
+      mobileMenu.classList.add('hidden');
+    })
+  })
   const cards = [
     {
       name: 'Multi-Post Stories Gain+Glory-1',
@@ -257,7 +245,14 @@ function main() {
         errorMessage.textContent = 'Email must be all in lowercase.';
         e.preventDefault();
       } else errorMessage.innerHTML = '';
+      // manage local storage
+      const name = document.getElementById('user_name')
+      const val = localStorage.getItem('user_name')
+      document.getElementById('user_name').value = val
+      console.log(name.value)
+      localStorage.setItem('name', name.value)
     });
+
   });
 }
 main();
