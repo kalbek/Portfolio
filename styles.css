@@ -801,14 +801,10 @@ form input {
 }
 
 #email-error-message {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-bottom: 5rem;
-  /* top: 19%; */
+  margin-top: -0.7rem;  
+  margin-bottom: 0.7rem;
   font-family: "Inter", sans-serif;
   color: red;
-  /* padding-top: 1rem; */
 }
 
 #details-popup .buttons {
