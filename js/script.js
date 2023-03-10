@@ -251,14 +251,12 @@ function main() {
     // validate form on submit
     const form = document.querySelector('#form');
     const errorMessage = document.getElementById('email-error-message');
-    const email = document.getElementById('email')
+    const email = document.getElementById('email');
     form.addEventListener('submit', (e) => {
-      console.log('hey ', email)
       if (/[A-Z]/.test(email.value)) {
         errorMessage.textContent = 'Email must be all in lowercase.';
         e.preventDefault();
-        console.log('preventing submit')
-      } else errorMessage.innerHTML = ''
+      } else errorMessage.innerHTML = '';
     });
   });
 }
