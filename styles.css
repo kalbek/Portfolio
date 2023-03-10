@@ -802,14 +802,9 @@ form input {
 }
 
 #email-error-message {
-<<<<<<< HEAD
-  margin-top: -0.7rem;  
-  margin-bottom: 0.7rem;
-=======
   position: absolute;
   top: 42%;
   left: 0;
->>>>>>> c68c723 (implement validation for uppercases usage in forms email field)
   font-family: "Inter", sans-serif;
   color: red;
 }
