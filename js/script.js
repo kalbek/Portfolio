@@ -268,3 +268,7 @@ function main() {
   });
 }
 main();
+
+function manageLocalStorage() {
+  const name = document.getElementById('#user_name');
+}
