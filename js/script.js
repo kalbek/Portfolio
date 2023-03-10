@@ -258,12 +258,13 @@ function main() {
     const email = document.getElementById('email')
     form.addEventListener("submit", () => {
       console.log("hey ", email)
-
       if (/[A-Z]/.test(email.value)) {
         errorMessage.innerHtml = "Email must be all in lowercase.";
         e.preventDefault();
       } else errorMessage.innerHTML = "";
     });
+
+    // local-storage
   });
 }
 main();
