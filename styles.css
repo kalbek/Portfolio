@@ -397,6 +397,7 @@ form button {
   justify-content: center;
   align-items: center;
   border: 1px solid #36b37f;
+  margin-top: 20px;
 }
 
 .btn-primary:hover {
@@ -533,7 +534,7 @@ form {
 }
 
 form input {
-  width: 327px;
+  min-width: 327px;
   height: 48px;
   background: #fff;
   border: 1px solid #d0d9d4;
@@ -801,8 +802,14 @@ form input {
 }
 
 #email-error-message {
+<<<<<<< HEAD
   margin-top: -0.7rem;  
   margin-bottom: 0.7rem;
+=======
+  position: absolute;
+  top: 42%;
+  left: 0;
+>>>>>>> c68c723 (implement validation for uppercases usage in forms email field)
   font-family: "Inter", sans-serif;
   color: red;
 }
@@ -868,6 +875,14 @@ form input {
     padding: 1rem 0;
   }
 
+  #email-error-message {
+    position: absolute;
+    top: 64%;
+    left: 0;
+    font-family: "Inter", sans-serif;
+    color: red;
+  }
+
   .desktop-navbar ul {
     display: flex;
     justify-content: center;
@@ -915,6 +930,15 @@ form input {
 
   #mobile-menu-active {
     display: none;
+  }
+
+  #primary-rich-textbox {
+    width: 592px;
+    height: 114px;
+    background: #fff;
+    border: 1px solid #60c095;
+    border-radius: 4px;
+    text-align: start;
   }
 
   .primary .supporting-text {
@@ -1246,7 +1270,9 @@ form input {
   }
 
   form button {
-    margin-left: -0.1rem;
+    position: absolute;
+    left: 0;
+    top: 70%;
   }
 
   .contact button {
@@ -1349,8 +1375,11 @@ form input {
     display: block;
   }
 
-  .mobile-textarea {
-    display: none;
+  textarea {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 35%;
   }
 
   .about-me .card-2 {
