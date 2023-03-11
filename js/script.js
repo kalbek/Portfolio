@@ -260,19 +260,19 @@ window.onload = () => {
 
   // handling event for every change in input field
   form.addEventListener('input', () => {
-    const fields = { name, email, message }
+    const fields = { name, email, message };
     // storing input values to a local storage
-    fields.name = name.value
-    fields.email = email.value
-    fields.message = message.value
+    fields.name = name.value;
+    fields.email = email.value;
+    fields.message = message.value;
     localStorage.setItem('data', JSON.stringify(fields));
-  })
+  });
   // parsing the data
   const data = JSON.parse(localStorage.getItem('data'));
   // assining values to input fields from local storage on page load
-  if (data !== null && data !== undefined) { 
+  if (data !== null && data !== undefined) {
     name.value = data.name;
     email.value = data.email;
     message.value = data.message;
   }
-}
+};
