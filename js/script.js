@@ -7,13 +7,13 @@ function main() {
     mobileMenu.classList.remove('hidden');
     mobileMenu.classList.add('visible');
   });
-  closeMenu.forEach(menu => {
+  closeMenu.forEach((menu) => {
     menu.addEventListener('click', () => {
       const mobileMenu = document.querySelector('#mobile-menu-active');
       mobileMenu.classList.remove('visible');
       mobileMenu.classList.add('hidden');
-    })
-  })
+    });
+  });
   const cards = [
     {
       name: 'Multi-Post Stories Gain+Glory-1',
@@ -139,7 +139,7 @@ function main() {
   // create project details cards dynamically on page load
   cards.forEach((card) => {
     const dynamicCard = document.querySelector('#card-work');
-    dynamicCard.classList.add("flex-col")
+    dynamicCard.classList.add('flex-col');
     //   create ul inside card-work
     const topul = document.createElement('ul');
     dynamicCard.appendChild(topul);
@@ -149,7 +149,7 @@ function main() {
     //   create the 'card card-1' div inside top ul li
     const card1Div = document.createElement('div');
     topulli.appendChild(card1Div);
-    card1Div.classList.add('card','card-1','flex-centered');
+    card1Div.classList.add('card', 'card-1', 'flex-centered');
     // create the 'subcard'
     const subcard = document.createElement('div');
     card1Div.appendChild(subcard);
@@ -246,13 +246,11 @@ function main() {
         e.preventDefault();
       } else errorMessage.innerHTML = '';
       // manage local storage
-      const name = document.getElementById('user_name')
-      const val = localStorage.getItem('user_name')
-      document.getElementById('user_name').value = val
-      console.log(name.value)
-      localStorage.setItem('name', name.value)
+      const name = document.getElementById('user_name');
+      const val = localStorage.getItem('user_name');
+      document.getElementById('user_name').value = val;
+      localStorage.setItem('name', name.value);
     });
-
   });
 }
 main();

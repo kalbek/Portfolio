@@ -21,7 +21,7 @@
     top: 46%;
     left: 0;
     font-family: "Inter", sans-serif;
-    color: #ff0000;
+    color: #ff0;
   }
 
   .desktop-navbar ul {
@@ -401,7 +401,7 @@
   form button {
     position: absolute;
     left: 0;
-    top:48%;
+    top: 48%;
   }
 
   .contact button {

@@ -529,7 +529,7 @@ form input {
   flex-direction: column;
 }
 
-.flex-col-c{
+.flex-col-c {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -791,4 +791,3 @@ form input {
 #details-popup .buttons .seesource i {
   margin-top: 0.7rem;
 }
-
