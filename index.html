@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaleb's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.mobile.css" />
+    <link rel="stylesheet" href="style.desktop.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="flex">
     <header>
       <!-- logo -->
       <div class="toolbar flex space-between">
@@ -68,11 +69,17 @@
       <section id="mobile-menu-active" class="mobile-menu-active hidden">
         <div class="container">
           <ul>
-            <li id="mobile-portfolio"><a href="#portfolio">Portfolio</a></li>
-            <li id="mobile-about"><a href="#about-me">About</a></li>
-            <li id="mobile-contact"><a href="#contact">Contact</a></li>
+            <li class="close" id="mobile-portfolio">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="close" id="mobile-about">
+              <a href="#about-me">About</a>
+            </li>
+            <li class="close" id="mobile-contact">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
-          <div class="close-mobile-menu" id="close-mobile-menu">
+          <div class="close close-mobile-menu" id="close-mobile-menu">
             <img
               src="./Assets/Buttons/mobile-active-menu-close.svg"
               alt="close menu button"
@@ -81,15 +88,15 @@
         </div>
       </section>
       <!-- mobile menu inactive state and headers-->
-      <section class="headline">
+      <section class="headline flex">
         <div class="desktop-navbar">
-          <ul>
+          <ul class="flex">
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about-me">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="primary">
+        <div class="primary flex">
           <h1>
             Hey there. I'm Kaleb. <br />
             <span> I'm a software developer </span>
@@ -103,7 +110,7 @@
             </p>
           </div>
           <div class="social-media-icons social-media-icons-mobile">
-            <ul>
+            <ul class="flex">
               <li>
                 <a href="#">
                   <img
@@ -178,24 +185,24 @@
               </li>
             </ul>
           </div>
-          <div class="action">
+          <div class="action flex">
             <div class="icon"></div>
           </div>
         </div>
       </section>
       <section class="recent-works">
         <div class="text">
-          <div class="primary-text">
+          <div class="primary-text flex-centered">
             <h2>My Recent Works</h2>
           </div>
-          <div class="indicator">
+          <div class="indicator flex-centered">
             <div class="icon"></div>
           </div>
         </div>
         <!-- DETAILS CARDS GOES HERE -->
-        <div class="card-work" id="card-work"></div>
+        <div class="card-work flex-center-centered" id="card-work"></div>
       </section>
-      <section id="about-me" class="about-me">
+      <section id="about-me" class="about-me flex-col-c">
         <div class="flex">
           <h2>About me</h2>
           <div class="flex flex-end">
@@ -223,11 +230,11 @@
         <div class="about-me-cards">
           <ul>
             <li>
-              <div class="card-2">
+              <div class="card-2 flex-col-c">
                 <div class="languages"></div>
                 <div class="title">Languages</div>
                 <div class="tags">
-                  <ul>
+                  <ul class="flex">
                     <li><a href="">JavaScript</a></li>
                     <li><a href="">Ruby</a></li>
                     <li><a href="">Html</a></li>
@@ -238,13 +245,13 @@
               <br />
             </li>
             <li>
-              <div class="card-2">
+              <div class="card-2 flex-col-c">
                 <div>
                   <div class="frameworks"></div>
                 </div>
                 <div class="title">Frameworks</div>
                 <div class="tags">
-                  <ul>
+                  <ul class="flex">
                     <li><a href="">Bootstrap</a></li>
                     <li><a href="">Ruby on rails</a></li>
                     <li><a href="">RSpec</a></li>
@@ -256,7 +263,7 @@
               <br />
             </li>
             <li>
-              <div class="card-2">
+              <div class="card-2 flex-col-c">
                 <div>
                   <div class="skills"></div>
                 </div>
@@ -264,7 +271,7 @@
                   <div class="title">Skills</div>
                 </div>
                 <div class="tags">
-                  <ul>
+                  <ul class="flex">
                     <li><a href="">CodeKit</a></li>
                     <li><a href="">GitHub</a></li>
                     <li><a href="">CodePen</a></li>
@@ -288,24 +295,20 @@
       <section id="contact" class="contact">
         <div class="container">
           <form
+          class="flex-col-c"
             action="https://formspree.io/f/xjvdwpvn"
             method="POST"
             id="form"
           >
-          <label for="user_name" class="hidden_element"> Full name</label>
-          <div id="email-error-message">error</div>
-          <br>
-          <input
-          type="text"
-          name="name"
-          id="user_name"
-          maxlength="30"
-          placeholder="  Full name"
-          required
-          />
-            <label for="email_address" class="hidden_element"
-              >Email address</label
-            >
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="user_name"
+              maxlength="30"
+              placeholder="  Full name"
+              required
+            />
             <input
               type="email"
               name="email"
@@ -313,34 +316,23 @@
               placeholder="  Email address"
               required
             />
-            <label for="message" class="hidden_element">Leave a message</label>
-            <div class="mobile-textarea">
-              <textarea
-                id="primary-rich-textbox"
-                class="primary-rich-textbox"
-                name="message"
-                rows="10"
-                cols="43"
-                maxlength="500"
-                placeholder=" Enter text here"
-              ></textarea>
-            </div>
-            <label for="message" class="hidden_element">Leave a message</label>
-            <div class="desktop-textarea">
-              <textarea
-                id="primary-rich-textbox2"
-                class="primary-rich-textbox"
-                cols="100"
-                placeholder=" Typing Something"
-                required
-              ></textarea>
-            </div>
+            <label for="mobile-textarea" class="hidden_element"
+              >Leave a message</label
+            >
+            <textarea
+              id="primary-rich-textbox"
+              class="primary-rich-textbox"
+              name="message"
+              placeholder=" Enter text here"
+              required
+            ></textarea>
+            <div id="email-error-message"></div>
             <button type="submit">Get in touch</button>
           </form>
           <div class="shape-10"></div>
           <div>
             <div class="social-media-icons social-media-icons-mobile">
-              <ul>
+              <ul class="flex">
                 <li>
                   <a href=""
                     ><img
@@ -424,8 +416,7 @@
         </div>
       </section>
       <footer>
-        <div class="bar"></div>
-        <div class="fotter-shapes">
+        <div class="fotter-shapes flex">
           <div class="shape-11"></div>
           <div class="shape-12"></div>
           <div></div>
@@ -433,6 +424,7 @@
           <div></div>
           <div class="shape-13"></div>
         </div>
+        <div class="bar"></div>
       </footer>
     </main>
   </body>
