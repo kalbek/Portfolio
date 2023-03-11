@@ -245,16 +245,34 @@ function main() {
         errorMessage.textContent = 'Email must be all in lowercase.';
         e.preventDefault();
       } else errorMessage.innerHTML = '';
-      // manage local storage
-      const name = document.getElementById('user_name');
-      const val = localStorage.getItem('user_name');
-      document.getElementById('user_name').value = val;
-      localStorage.setItem('name', name.value);
     });
   });
 }
 main();
 
+// preserve data on browsers on page load
 window.onload = () => {
-  console.log("loading...")
+  // assigning form fields to a variable
+  const form = document.querySelector('#form');
+  const name = document.getElementById('user_name');
+  const email = document.getElementById('email');
+  const message = document.getElementById('primary-rich-textbox');
+  
+  // handling event for every change in input field
+  form.addEventListener('input', () => {
+    const fields = { name, email, message }
+    // storing input values to a local storage
+    fields.name = name.value
+    fields.email = email.value
+    fields.message = message.value
+    localStorage.setItem('data', JSON.stringify(fields));
+  })
+  // parsing the data
+  const data = JSON.parse(localStorage.getItem('data'));
+  // assining values to input fields from local storage on page load
+  if (data !== null && data !== undefined) { 
+    name.value = data.name;
+    email.value = data.email;
+    message.value = data.message;
+  }
 }
