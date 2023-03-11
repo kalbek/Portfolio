@@ -254,3 +254,7 @@ function main() {
   });
 }
 main();
+
+window.onload = () => {
+  console.log("loading...")
+}
