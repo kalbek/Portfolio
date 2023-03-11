@@ -1,30 +1,18 @@
 function main() {
   const openMenu = document.getElementById('open-mobile-menu');
-  const closeMenu = document.getElementById('close-mobile-menu');
-  const mobilePortfolio = document.getElementById('mobile-portfolio');
-  const mobileAbout = document.getElementById('mobile-about');
-  const mobileContact = document.getElementById('mobile-contact');
-  function closeMobileMenu() {
-    const mobileMenu = document.querySelector('#mobile-menu-active');
-    mobileMenu.classList.remove('visible');
-    mobileMenu.classList.add('hidden');
-  }
+  const closeMenu = document.querySelectorAll('.close');
+
   openMenu.addEventListener('click', () => {
     const mobileMenu = document.querySelector('#mobile-menu-active');
     mobileMenu.classList.remove('hidden');
     mobileMenu.classList.add('visible');
   });
-  closeMenu.addEventListener('click', () => {
-    closeMobileMenu();
-  });
-  mobilePortfolio.addEventListener('click', () => {
-    closeMobileMenu();
-  });
-  mobileAbout.addEventListener('click', () => {
-    closeMobileMenu();
-  });
-  mobileContact.addEventListener('click', () => {
-    closeMobileMenu();
+  closeMenu.forEach((menu) => {
+    menu.addEventListener('click', () => {
+      const mobileMenu = document.querySelector('#mobile-menu-active');
+      mobileMenu.classList.remove('visible');
+      mobileMenu.classList.add('hidden');
+    });
   });
   const cards = [
     {
@@ -151,6 +139,7 @@ function main() {
   // create project details cards dynamically on page load
   cards.forEach((card) => {
     const dynamicCard = document.querySelector('#card-work');
+    dynamicCard.classList.add('flex-col');
     //   create ul inside card-work
     const topul = document.createElement('ul');
     dynamicCard.appendChild(topul);
@@ -160,8 +149,7 @@ function main() {
     //   create the 'card card-1' div inside top ul li
     const card1Div = document.createElement('div');
     topulli.appendChild(card1Div);
-    card1Div.classList.add('card');
-    card1Div.classList.add('card-1');
+    card1Div.classList.add('card', 'card-1', 'flex-centered');
     // create the 'subcard'
     const subcard = document.createElement('div');
     card1Div.appendChild(subcard);
@@ -169,7 +157,7 @@ function main() {
     // create container
     const container = document.createElement('div');
     subcard.appendChild(container);
-    container.classList.add('container');
+    container.classList.add('container', 'flex-col-c');
     //   create the project title
     const projectTitle = document.createElement('div');
     container.appendChild(projectTitle);
@@ -247,6 +235,21 @@ function main() {
       const detailsTechUl = document.querySelector('#details-popup-tags ul');
       const removables = document.querySelector('#details-popup-tags ul li');
       if (removables !== null) detailsTechUl.removeChild(removables);
+    });
+    // validate form on submit
+    const form = document.querySelector('#form');
+    const errorMessage = document.getElementById('email-error-message');
+    const email = document.getElementById('email');
+    form.addEventListener('submit', (e) => {
+      if (/[A-Z]/.test(email.value)) {
+        errorMessage.textContent = 'Email must be all in lowercase.';
+        e.preventDefault();
+      } else errorMessage.innerHTML = '';
+      // manage local storage
+      const name = document.getElementById('user_name');
+      const val = localStorage.getItem('user_name');
+      document.getElementById('user_name').value = val;
+      localStorage.setItem('name', name.value);
     });
   });
 }
