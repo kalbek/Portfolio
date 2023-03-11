@@ -252,12 +252,12 @@ main();
 
 // preserve data on browsers on page load
 window.onload = () => {
-  // assigning form fields to a variable
+  // assigning form fields to a variable.
   const form = document.querySelector('#form');
   const name = document.getElementById('user_name');
   const email = document.getElementById('email');
   const message = document.getElementById('primary-rich-textbox');
-  
+
   // handling event for every change in input field
   form.addEventListener('input', () => {
     const fields = { name, email, message }
