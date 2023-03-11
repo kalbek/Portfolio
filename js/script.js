@@ -1,274 +1,256 @@
 function main() {
-  const openMenu = document.getElementById("open-mobile-menu");
-  const closeMenu = document.getElementById("close-mobile-menu");
-  const mobilePortfolio = document.getElementById("mobile-portfolio");
-  const mobileAbout = document.getElementById("mobile-about");
-  const mobileContact = document.getElementById("mobile-contact");
-  function closeMobileMenu() {
-    const mobileMenu = document.querySelector("#mobile-menu-active");
-    mobileMenu.classList.remove("visible");
-    mobileMenu.classList.add("hidden");
-  }
-  openMenu.addEventListener("click", () => {
-    const mobileMenu = document.querySelector("#mobile-menu-active");
-    mobileMenu.classList.remove("hidden");
-    mobileMenu.classList.add("visible");
+  const openMenu = document.getElementById('open-mobile-menu');
+  const closeMenu = document.querySelectorAll('.close');
+
+  openMenu.addEventListener('click', () => {
+    const mobileMenu = document.querySelector('#mobile-menu-active');
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('visible');
   });
-  closeMenu.addEventListener("click", () => {
-    closeMobileMenu();
-  });
-  mobilePortfolio.addEventListener("click", () => {
-    closeMobileMenu();
-  });
-  mobileAbout.addEventListener("click", () => {
-    closeMobileMenu();
-  });
-  mobileContact.addEventListener("click", () => {
-    closeMobileMenu();
+  closeMenu.forEach((menu) => {
+    menu.addEventListener('click', () => {
+      const mobileMenu = document.querySelector('#mobile-menu-active');
+      mobileMenu.classList.remove('visible');
+      mobileMenu.classList.add('hidden');
+    });
   });
   const cards = [
     {
-      name: "Multi-Post Stories Gain+Glory-1",
+      name: 'Multi-Post Stories Gain+Glory-1',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      img: "./Assets/images/mobile-snapshot-image.svg",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      img: './Assets/images/mobile-snapshot-image.svg',
       technologies: [
         {
-          name: "Ruby on rails-1",
+          name: 'Ruby on rails-1',
         },
         {
-          name: "css",
+          name: 'css',
         },
         {
-          name: "JavaScript",
+          name: 'JavaScript',
         },
         {
-          name: "html",
+          name: 'html',
         },
       ],
     },
     {
-      name: "Multi-Post Stories Gain+Glory-2",
+      name: 'Multi-Post Stories Gain+Glory-2',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      img: "./Assets/images/mobile-snapshot-image.svg",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      img: './Assets/images/mobile-snapshot-image.svg',
       technologies: [
         {
-          name: "Ruby on rails-2",
+          name: 'Ruby on rails-2',
         },
         {
-          name: "css",
+          name: 'css',
         },
         {
-          name: "JavaScript",
+          name: 'JavaScript',
         },
         {
-          name: "html",
+          name: 'html',
         },
       ],
     },
     {
-      name: "Multi-Post Stories Gain+Glory-3",
+      name: 'Multi-Post Stories Gain+Glory-3',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      img: "./Assets/images/mobile-snapshot-image.svg",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      img: './Assets/images/mobile-snapshot-image.svg',
       technologies: [
         {
-          name: "Ruby on rails-3",
+          name: 'Ruby on rails-3',
         },
         {
-          name: "css",
+          name: 'css',
         },
         {
-          name: "JavaScript",
+          name: 'JavaScript',
         },
         {
-          name: "html",
+          name: 'html',
         },
       ],
     },
     {
-      name: "Multi-Post Stories Gain+Glory-4",
+      name: 'Multi-Post Stories Gain+Glory-4',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      img: "./Assets/images/mobile-snapshot-image.svg",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      img: './Assets/images/mobile-snapshot-image.svg',
       technologies: [
         {
-          name: "Ruby on rails-4",
+          name: 'Ruby on rails-4',
         },
         {
-          name: "css",
+          name: 'css',
         },
         {
-          name: "JavaScript",
+          name: 'JavaScript',
         },
         {
-          name: "html",
+          name: 'html',
         },
       ],
     },
     {
-      name: "Multi-Post Stories Gain+Glory-5",
+      name: 'Multi-Post Stories Gain+Glory-5',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      img: "./Assets/images/mobile-snapshot-image.svg",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      img: './Assets/images/mobile-snapshot-image.svg',
       technologies: [
         {
-          name: "Ruby on rails-5",
+          name: 'Ruby on rails-5',
         },
         {
-          name: "css",
+          name: 'css',
         },
         {
-          name: "JavaScript",
+          name: 'JavaScript',
         },
         {
-          name: "html",
+          name: 'html',
         },
       ],
     },
     {
-      name: "Multi-Post Stories Gain+Glory-6",
+      name: 'Multi-Post Stories Gain+Glory-6',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      img: "./Assets/images/mobile-snapshot-image.svg",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      img: './Assets/images/mobile-snapshot-image.svg',
       technologies: [
         {
-          name: "Ruby on rails-6",
+          name: 'Ruby on rails-6',
         },
         {
-          name: "css",
+          name: 'css',
         },
         {
-          name: "JavaScript",
+          name: 'JavaScript',
         },
         {
-          name: "html",
+          name: 'html',
         },
       ],
     },
   ];
   // create project details cards dynamically on page load
   cards.forEach((card) => {
-    const dynamicCard = document.querySelector("#card-work");
+    const dynamicCard = document.querySelector('#card-work');
+    dynamicCard.classList.add('flex-col');
     //   create ul inside card-work
-    const topul = document.createElement("ul");
+    const topul = document.createElement('ul');
     dynamicCard.appendChild(topul);
     //   create li's inside topul
-    const topulli = document.createElement("li");
+    const topulli = document.createElement('li');
     topul.appendChild(topulli);
     //   create the 'card card-1' div inside top ul li
-    const card1Div = document.createElement("div");
+    const card1Div = document.createElement('div');
     topulli.appendChild(card1Div);
-    card1Div.classList.add("card");
-    card1Div.classList.add("card-1");
+    card1Div.classList.add('card', 'card-1', 'flex-centered');
     // create the 'subcard'
-    const subcard = document.createElement("div");
+    const subcard = document.createElement('div');
     card1Div.appendChild(subcard);
-    subcard.classList.add("subcard");
+    subcard.classList.add('subcard');
     // create container
-    const container = document.createElement("div");
+    const container = document.createElement('div');
     subcard.appendChild(container);
-    container.classList.add("container");
+    container.classList.add('container', 'flex-col-c');
     //   create the project title
-    const projectTitle = document.createElement("div");
+    const projectTitle = document.createElement('div');
     container.appendChild(projectTitle);
-    projectTitle.classList.add("project-title");
+    projectTitle.classList.add('project-title');
     //   create content for li
-    const title = document.createElement("h3");
+    const title = document.createElement('h3');
     projectTitle.appendChild(title);
     title.textContent = card.name;
     // create tags
-    const tags = document.createElement("div");
+    const tags = document.createElement('div');
     container.appendChild(tags);
-    tags.classList.add("tags");
+    tags.classList.add('tags');
     // create ul inside tags
-    const taguls = document.createElement("ul");
+    const taguls = document.createElement('ul');
     tags.appendChild(taguls);
     //   now for technologies
     card.technologies.forEach((tech) => {
       // create li inside the ul's
-      const taglis = document.createElement("li");
+      const taglis = document.createElement('li');
       taguls.appendChild(taglis);
       // create a's inside li's
-      const as = document.createElement("a");
+      const as = document.createElement('a');
       taglis.appendChild(as);
       as.textContent = tech.name;
     });
     //   create the button
-    const seeProjectButton = document.createElement("div");
+    const seeProjectButton = document.createElement('div');
     container.appendChild(seeProjectButton);
-    seeProjectButton.classList.add("btn-primary");
+    seeProjectButton.classList.add('btn-primary');
     //   create the a tag inside button
-    const aTag = document.createElement("a");
+    const aTag = document.createElement('a');
     seeProjectButton.appendChild(aTag);
-    aTag.textContent = "See Project";
+    aTag.textContent = 'See Project';
     // create the technologies for popups based on the list of technologies
     // selected from the details
     // CREATE CLICK EVENT FOR 'SEE PROJECT' BUTTON TO TRIGGER DETAILS POPUP
-    const details = document.querySelector("#details-popup-section");
-    seeProjectButton.addEventListener("click", () => {
+    const details = document.querySelector('#details-popup-section');
+    seeProjectButton.addEventListener('click', () => {
       // update details heading with project title of selected project
-      const detailsHeading = document.getElementById("details-heading");
+      const detailsHeading = document.getElementById('details-heading');
       detailsHeading.textContent = card.name;
       // update text content of the details card with data from object
-      const detailsTextContent = document.getElementById(
-        "details-text-content"
-      );
+      const detailsTextContent = document.getElementById('details-text-content');
       detailsTextContent.textContent = card.description;
       // then display the popup
-      details.classList.remove("hidden");
-      details.classList.add("visible");
+      details.classList.remove('hidden');
+      details.classList.add('visible');
       // create the technologies for popups based on the list of technologies
       // selected from the details
-      const detailsTechUl = document.querySelector("#details-popup-tags ul");
+      const detailsTechUl = document.querySelector('#details-popup-tags ul');
       card.technologies.forEach((tech) => {
-        const listTech = document.createElement("li");
+        const listTech = document.createElement('li');
         detailsTechUl.appendChild(listTech);
-        const techATag = document.createElement("a");
+        const techATag = document.createElement('a');
         listTech.appendChild(techATag);
         techATag.textContent = tech.name;
       });
     });
     // click event for close button on mobile version of details popup
-    const closeMobileDetails = document.querySelector(".close-mobile-details");
-    const detailsTechUl = document.querySelector("#details-popup-tags ul");
-    closeMobileDetails.addEventListener("click", () => {
-      details.classList.remove("visible");
-      details.classList.add("hidden");
+    const closeMobileDetails = document.querySelector('.close-mobile-details');
+    const detailsTechUl = document.querySelector('#details-popup-tags ul');
+    closeMobileDetails.addEventListener('click', () => {
+      details.classList.remove('visible');
+      details.classList.add('hidden');
       // clear list of technologies from popup upon close
-      const removables = document.querySelector("#details-popup-tags ul li");
+      const removables = document.querySelector('#details-popup-tags ul li');
       if (removables !== null) detailsTechUl.removeChild(removables);
     });
     // click event for close button on desktop version of details popup
-    const closeDesktopDetails = document.querySelector(
-      ".close-desktop-details"
-    );
-    closeDesktopDetails.addEventListener("click", () => {
-      details.classList.remove("visible");
-      details.classList.add("hidden");
+    const closeDesktopDetails = document.querySelector('.close-desktop-details');
+    closeDesktopDetails.addEventListener('click', () => {
+      details.classList.remove('visible');
+      details.classList.add('hidden');
       // clear list of technologies from popup upon close
-      const detailsTechUl = document.querySelector("#details-popup-tags ul");
-      const removables = document.querySelector("#details-popup-tags ul li");
+      const detailsTechUl = document.querySelector('#details-popup-tags ul');
+      const removables = document.querySelector('#details-popup-tags ul li');
       if (removables !== null) detailsTechUl.removeChild(removables);
     });
     // validate form on submit
-    const form = document.querySelector("#form");
-    const errorMessage = document.getElementById("");
-    const email = document.getElementById('email')
-    form.addEventListener("submit", () => {
-      console.log("hey ", email)
+    const form = document.querySelector('#form');
+    const errorMessage = document.getElementById('email-error-message');
+    const email = document.getElementById('email');
+    form.addEventListener('submit', (e) => {
       if (/[A-Z]/.test(email.value)) {
-        errorMessage.innerHtml = "Email must be all in lowercase.";
+        errorMessage.textContent = 'Email must be all in lowercase.';
         e.preventDefault();
-      } else errorMessage.innerHTML = "";
+      } else errorMessage.innerHTML = '';
+      // manage local storage
+      const name = document.getElementById('user_name');
+      const val = localStorage.getItem('user_name');
+      document.getElementById('user_name').value = val;
+      localStorage.setItem('name', name.value);
     });
-
-    // local-storage
   });
 }
 main();
-
-function manageLocalStorage() {
-  const name = document.getElementById('#user_name');
-}
