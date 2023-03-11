@@ -269,7 +269,7 @@ window.onload = () => {
   });
   // parsing the data
   const data = JSON.parse(localStorage.getItem('data'));
-  // assining values to input fields from local storage on page load
+  // assining values to input fields from local storage on page load.
   if (data !== null && data !== undefined) {
     name.value = data.name;
     email.value = data.email;
