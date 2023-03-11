@@ -139,6 +139,7 @@ function main() {
   // create project details cards dynamically on page load
   cards.forEach((card) => {
     const dynamicCard = document.querySelector('#card-work');
+    dynamicCard.classList.add("flex-col")
     //   create ul inside card-work
     const topul = document.createElement('ul');
     dynamicCard.appendChild(topul);
@@ -148,8 +149,7 @@ function main() {
     //   create the 'card card-1' div inside top ul li
     const card1Div = document.createElement('div');
     topulli.appendChild(card1Div);
-    card1Div.classList.add('card');
-    card1Div.classList.add('card-1');
+    card1Div.classList.add('card','card-1','flex-centered');
     // create the 'subcard'
     const subcard = document.createElement('div');
     card1Div.appendChild(subcard);
@@ -157,7 +157,7 @@ function main() {
     // create container
     const container = document.createElement('div');
     subcard.appendChild(container);
-    container.classList.add('container');
+    container.classList.add('container', 'flex-col-c');
     //   create the project title
     const projectTitle = document.createElement('div');
     container.appendChild(projectTitle);
