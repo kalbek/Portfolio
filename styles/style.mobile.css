@@ -38,7 +38,7 @@ body {
   padding: 0 24px;
   height: 726px;
   margin-top: 10%;
-  background-image: url("./Assets/Images/background.svg");
+  background-image: url("../Assets/Images/background.svg");
   background-repeat: no-repeat;
 }
 
@@ -237,13 +237,13 @@ body {
 }
 
 .action .icon {
-  content: url("./Assets/Buttons/Scroll\ down\ icon.svg");
+  content: url("../Assets/Buttons/Scroll\ down\ icon.svg");
 }
 
 .recent-works .text .indicator .icon {
   width: 48px;
   height: 4px;
-  content: url("./Assets/Buttons/Indicator.svg");
+  content: url("../Assets/Buttons/Indicator.svg");
   position: absolute;
   margin-top: -3rem;
 }
@@ -384,7 +384,7 @@ form button:active {
   position: absolute;
   margin-left: -3rem;
   margin-top: -1rem;
-  content: url("./Assets/Shapes/Shape\ 8.svg");
+  content: url("../Assets/Shapes/Shape\ 8.svg");
 }
 
 .get-resume {
@@ -403,7 +403,7 @@ form button:active {
   top: 16.5%;
   right: 80%;
   bottom: 5%;
-  content: url("./Assets/Shapes/Shape\ 9.svg");
+  content: url("../Assets/Shapes/Shape\ 9.svg");
 }
 
 .about-me .card-2 {
@@ -452,15 +452,15 @@ form button:active {
 }
 
 .languages {
-  content: url("./Assets/Shapes/languages-icon.svg");
+  content: url("../Assets/Shapes/languages-icon.svg");
 }
 
 .frameworks {
-  content: url("./Assets/Shapes/frameworks-icon.svg");
+  content: url("../Assets/Shapes/frameworks-icon.svg");
 }
 
 .skills {
-  content: url("./Assets/Shapes/skills-icon.svg");
+  content: url("../Assets/Shapes/skills-icon.svg");
 }
 
 form input {
@@ -502,7 +502,7 @@ form input {
   position: absolute;
   top: 38.5%;
   left: 90%;
-  content: url("./Assets/Shapes/Shape\ 10.svg");
+  content: url("../Assets/Shapes/Shape\ 10.svg");
 }
 
 .flex {
@@ -655,7 +655,7 @@ form input {
 #details-popup .snapshot-img .img {
   width: 100%;
   height: 100%;
-  content: url("./Assets/Images/mobile-snapshot-image.svg");
+  content: url("../Assets/Images/mobile-snapshot-image.svg");
 }
 
 #details-popup .container .sub-container {

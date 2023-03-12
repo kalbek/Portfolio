@@ -58,7 +58,7 @@ https://www.loom.com/share/4679e5bb203e4d5aa4aea6bb67035886
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- This project is not deployed currently.
+- The Live Demo of this portfolio can be found at: https://kalbek.github.io/Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +88,7 @@ No test are available
 
 ### Deployment
 
-This project is deployed at github pages you can find it at https://kalbek.github.io/Portfolio/
+This project is deployed at github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
