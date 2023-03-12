@@ -267,7 +267,7 @@ window.onload = () => {
     fields.message = message.value;
     localStorage.setItem('data', JSON.stringify(fields));
   });
-  // parsing the data
+  // parsing the data.
   const data = JSON.parse(localStorage.getItem('data'));
   // assining values to input fields from local storage on page load.
   if (data !== null && data !== undefined) {
