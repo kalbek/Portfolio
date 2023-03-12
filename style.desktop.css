@@ -4,7 +4,7 @@
     width: auto;
     flex-direction: column;
     align-items: center;
-    background-image: url("../Assets/Images/background-desktop.svg");
+    background-image: url("./Assets/Images/background-desktop.svg");
     background-position: center 0%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 
   .close-desktop-details {
     position: absolute;
-    content: url("../Assets/Images/close-desktop-details.svg");
+    content: url(./Assets/Images/close-desktop-details.svg);
     display: block;
     top: 1rem;
     right: 2rem;
@@ -209,7 +209,7 @@
   }
 
   #details-popup .snapshot-img .img {
-    content: url("../Assets/Images/snapshoot-Portfolio-desktop.svg");
+    content: url("./Assets/Images/snapshoot-Portfolio-desktop.svg");
   }
 
   .shape-11 {
@@ -217,7 +217,7 @@
     animation-name: out;
     animation-duration: 1s;
     position: absolute;
-    content: url("../Assets/Shapes/img-11-desktop.svg");
+    content: url("./Assets/Shapes/img-11-desktop.svg");
     margin-top: 10rem;
   }
 
@@ -341,7 +341,7 @@
     position: absolute;
     left: 0.1%;
     display: block;
-    content: url("../Assets/Shapes/img-10-desktop.svg");
+    content: url("./Assets/Shapes/img-10-desktop.svg");
   }
 
   .shape-9-desktop:hover {
@@ -371,7 +371,7 @@
     margin-left: 68%;
     margin-top: -10%;
     display: block;
-    content: url("../Assets/Shapes/img-9-desktop.svg");
+    content: url("./Assets/Shapes/img-9-desktop.svg");
   }
 
   .shape-10-desktop:hover {
@@ -432,7 +432,7 @@
     position: absolute;
     margin-top: 20rem;
     margin-left: 22rem;
-    content: url("../Assets/Shapes/img-12-desktop.svg");
+    content: url("./Assets/Shapes/img-12-desktop.svg");
   }
 
   .desktop-navbar li:hover {
@@ -481,7 +481,7 @@
 
   .shape-13 {
     position: relative;
-    content: url("../Assets/Shapes/img-13-desktop.svg");
+    content: url("./Assets/Shapes/img-13-desktop.svg");
   }
 
   .fotter-shapes {
@@ -500,7 +500,7 @@
     position: absolute;
     left: 1rem;
     margin-bottom: 10rem;
-    content: url("../Assets/Shapes/bar.svg");
+    content: url("./Assets/Shapes/bar.svg");
   }
 
   footer {
