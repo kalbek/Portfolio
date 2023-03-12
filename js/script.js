@@ -261,7 +261,7 @@ window.onload = () => {
   // handling event for every change in input field
   form.addEventListener('input', () => {
     const fields = { name, email, message };
-    // storing input values to a local storage
+    // storing input values to a local storage.
     fields.name = name.value;
     fields.email = email.value;
     fields.message = message.value;
